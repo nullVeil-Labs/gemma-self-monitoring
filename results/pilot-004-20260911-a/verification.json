@@ -1,0 +1,11 @@
+{
+  "tests_passed": 31,
+  "protocol_and_runner_fingerprints_match": true,
+  "raw_rows": 48,
+  "bank_probability_sums_verified": true,
+  "saved_reanalysis_matches": true,
+  "donor_artifacts_absent": true,
+  "intervention_count": 0,
+  "evaluation_artifacts_absent": true,
+  "model_hashing": "skipped_at_user_request"
+}

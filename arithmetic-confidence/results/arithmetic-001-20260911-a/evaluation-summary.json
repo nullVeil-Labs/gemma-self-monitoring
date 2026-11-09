@@ -1,0 +1,57 @@
+{
+  "questions": 64,
+  "correct": 32,
+  "incorrect": 32,
+  "valid_integer_answers": 60,
+  "mapping_quality": {
+    "0": {
+      "valid_rate": 1,
+      "mean_label_mass": 0.9999999744232468
+    },
+    "1": {
+      "valid_rate": 1,
+      "mean_label_mass": 0.9999998750378083
+    }
+  },
+  "mean_mapping_difference": 2.9537946540127147e-05,
+  "format_passes": true,
+  "brier_confidence": 0.49997695368676165,
+  "brier_difficulty_baseline": 0.07500000000000001,
+  "brier_global_baseline": 0.2508650519031142,
+  "brier_improvement": -0.42497695368676164,
+  "paired_stratified_bootstrap_95pct": [
+    -0.48122515566888735,
+    -0.3499785011170707
+  ],
+  "mapping_brier_improvements": {
+    "0": -0.4249606696154689,
+    "1": -0.42499323823255974
+  },
+  "within_stratum_auc": 0.5517241379310345,
+  "within_stratum_comparable_pairs": 58,
+  "by_stratum": {
+    "add3": {
+      "accuracy": 0.9375,
+      "mean_confidence": 0.9999856658635656,
+      "frozen_baseline": 0.9
+    },
+    "multiply2": {
+      "accuracy": 0.9375,
+      "mean_confidence": 0.9999723816944988,
+      "frozen_baseline": 0.7
+    },
+    "multiply3": {
+      "accuracy": 0.125,
+      "mean_confidence": 0.9999753532466233,
+      "frozen_baseline": 0.2
+    },
+    "multiply4": {
+      "accuracy": 0,
+      "mean_confidence": 0.9999787051116735,
+      "frozen_baseline": 0.1
+    }
+  },
+  "passes_pilot_gates": false,
+  "interpretation": "This pilot did not establish confidence prediction beyond its frozen difficulty-baseline criteria.",
+  "consciousness_inference": false
+}

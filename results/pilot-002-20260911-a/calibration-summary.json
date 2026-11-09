@@ -1,0 +1,314 @@
+{
+  "candidates": [
+    {
+      "site": "carrier",
+      "strength": 0.05,
+      "concepts": {
+        "fruit": {
+          "log_odds_gains": {
+            "concept": 2.6718422174453735,
+            "random": 0.1391890048980713,
+            "negative": -0.7662318348884583
+          },
+          "positive_cell_fraction": 1,
+          "mean_family_mass": 2.433200897189458e-05,
+          "mean_target_mass_gain": 2.321599993848622e-05
+        },
+        "music": {
+          "log_odds_gains": {
+            "concept": 2.6688538789749146,
+            "random": -0.07553434371948242,
+            "negative": -1.2651044130325317
+          },
+          "positive_cell_fraction": 1,
+          "mean_family_mass": 6.413085685608166e-06,
+          "mean_target_mass_gain": 4.329510686629234e-06
+        }
+      },
+      "reading": {
+        "concept": {
+          "valid_label_rate": 1,
+          "mean_label_mass": 0.9999999972511944,
+          "reading_accuracy": 1
+        },
+        "random": {
+          "valid_label_rate": 1,
+          "mean_label_mass": 0.9999999955030319,
+          "reading_accuracy": 1
+        },
+        "negative": {
+          "valid_label_rate": 1,
+          "mean_label_mass": 0.9999999992657536,
+          "reading_accuracy": 1
+        }
+      },
+      "baseline_reading": {
+        "valid_label_rate": 1,
+        "mean_label_mass": 0.9999999870685841,
+        "reading_accuracy": 1
+      },
+      "passes": false
+    },
+    {
+      "site": "carrier",
+      "strength": 0.15,
+      "concepts": {
+        "fruit": {
+          "log_odds_gains": {
+            "concept": 3.109906315803528,
+            "random": 0.29251211881637573,
+            "negative": 0.802216649055481
+          },
+          "positive_cell_fraction": 1,
+          "mean_family_mass": 2.559133353030596e-05,
+          "mean_target_mass_gain": 2.4606783490810358e-05
+        },
+        "music": {
+          "log_odds_gains": {
+            "concept": 2.824623227119446,
+            "random": -0.30136537551879883,
+            "negative": -1.068884015083313
+          },
+          "positive_cell_fraction": 1,
+          "mean_family_mass": 3.441693337435936e-06,
+          "mean_target_mass_gain": 1.9789348033594223e-06
+        }
+      },
+      "reading": {
+        "concept": {
+          "valid_label_rate": 1,
+          "mean_label_mass": 0.9999999986255972,
+          "reading_accuracy": 1
+        },
+        "random": {
+          "valid_label_rate": 1,
+          "mean_label_mass": 0.9999999906332491,
+          "reading_accuracy": 1
+        },
+        "negative": {
+          "valid_label_rate": 1,
+          "mean_label_mass": 0.9999999870685841,
+          "reading_accuracy": 1
+        }
+      },
+      "baseline_reading": {
+        "valid_label_rate": 1,
+        "mean_label_mass": 0.9999999870685841,
+        "reading_accuracy": 1
+      },
+      "passes": false
+    },
+    {
+      "site": "carrier",
+      "strength": 0.3,
+      "concepts": {
+        "fruit": {
+          "log_odds_gains": {
+            "concept": 3.242162823677063,
+            "random": 0.8512352108955383,
+            "negative": 1.258654236793518
+          },
+          "positive_cell_fraction": 1,
+          "mean_family_mass": 2.2118799444914572e-05,
+          "mean_target_mass_gain": 2.1169428528367007e-05
+        },
+        "music": {
+          "log_odds_gains": {
+            "concept": 1.5118961334228516,
+            "random": -0.7096137404441833,
+            "negative": -0.8751170635223389
+          },
+          "positive_cell_fraction": 0.75,
+          "mean_family_mass": 2.4149240616111456e-06,
+          "mean_target_mass_gain": 3.5721823254952767e-07
+        }
+      },
+      "reading": {
+        "concept": {
+          "valid_label_rate": 1,
+          "mean_label_mass": 0.999999993534292,
+          "reading_accuracy": 1
+        },
+        "random": {
+          "valid_label_rate": 1,
+          "mean_label_mass": 0.9999999962364825,
+          "reading_accuracy": 1
+        },
+        "negative": {
+          "valid_label_rate": 1,
+          "mean_label_mass": 0.9999999870685841,
+          "reading_accuracy": 1
+        }
+      },
+      "baseline_reading": {
+        "valid_label_rate": 1,
+        "mean_label_mass": 0.9999999870685841,
+        "reading_accuracy": 1
+      },
+      "passes": false
+    },
+    {
+      "site": "response",
+      "strength": 0.05,
+      "concepts": {
+        "fruit": {
+          "log_odds_gains": {
+            "concept": 1.318232774734497,
+            "random": -1.2001164555549622,
+            "negative": -0.49218034744262695
+          },
+          "positive_cell_fraction": 1,
+          "mean_family_mass": 1.4053013874359976e-05,
+          "mean_target_mass_gain": 1.2529925022874977e-05
+        },
+        "music": {
+          "log_odds_gains": {
+            "concept": 2.619077444076538,
+            "random": -0.3131002187728882,
+            "negative": -1.0139840841293335
+          },
+          "positive_cell_fraction": 1,
+          "mean_family_mass": 4.4639703133952935e-06,
+          "mean_target_mass_gain": 2.559437901394901e-06
+        }
+      },
+      "reading": {
+        "concept": {
+          "valid_label_rate": 1,
+          "mean_label_mass": 0.9999999936308424,
+          "reading_accuracy": 1
+        },
+        "random": {
+          "valid_label_rate": 1,
+          "mean_label_mass": 0.9999999863780289,
+          "reading_accuracy": 1
+        },
+        "negative": {
+          "valid_label_rate": 1,
+          "mean_label_mass": 0.999999978366569,
+          "reading_accuracy": 1
+        }
+      },
+      "baseline_reading": {
+        "valid_label_rate": 1,
+        "mean_label_mass": 0.9999999870685841,
+        "reading_accuracy": 1
+      },
+      "passes": false
+    },
+    {
+      "site": "response",
+      "strength": 0.15,
+      "concepts": {
+        "fruit": {
+          "log_odds_gains": {
+            "concept": 4.794515132904053,
+            "random": -5.285717666149139,
+            "negative": -2.063771143555641
+          },
+          "positive_cell_fraction": 1,
+          "mean_family_mass": 5.492324959410766e-05,
+          "mean_target_mass_gain": 5.3966095613589005e-05
+        },
+        "music": {
+          "log_odds_gains": {
+            "concept": 6.814963936805725,
+            "random": 0.10882568359375,
+            "negative": -0.4156186133623123
+          },
+          "positive_cell_fraction": 1,
+          "mean_family_mass": 3.894558782491231e-05,
+          "mean_target_mass_gain": 3.822234906070143e-05
+        }
+      },
+      "reading": {
+        "concept": {
+          "valid_label_rate": 1,
+          "mean_label_mass": 1.0,
+          "reading_accuracy": 1
+        },
+        "random": {
+          "valid_label_rate": 1,
+          "mean_label_mass": 0.999999989907078,
+          "reading_accuracy": 1
+        },
+        "negative": {
+          "valid_label_rate": 1,
+          "mean_label_mass": 0.9999999914042075,
+          "reading_accuracy": 1
+        }
+      },
+      "baseline_reading": {
+        "valid_label_rate": 1,
+        "mean_label_mass": 0.9999999870685841,
+        "reading_accuracy": 1
+      },
+      "passes": false
+    },
+    {
+      "site": "response",
+      "strength": 0.3,
+      "concepts": {
+        "fruit": {
+          "log_odds_gains": {
+            "concept": 3.501068353652954,
+            "random": -5.711558103561401,
+            "negative": -5.7811442613601685
+          },
+          "positive_cell_fraction": 1,
+          "mean_family_mass": 6.046404582293885e-07,
+          "mean_target_mass_gain": -3.0802863193457597e-07
+        },
+        "music": {
+          "log_odds_gains": {
+            "concept": 4.89180600643158,
+            "random": 0.43575185537338257,
+            "negative": 0.8846691697835922
+          },
+          "positive_cell_fraction": 1,
+          "mean_family_mass": 1.8353085318167928e-07,
+          "mean_target_mass_gain": 1.3137731125212326e-08
+        }
+      },
+      "reading": {
+        "concept": {
+          "valid_label_rate": 0.375,
+          "mean_label_mass": 0.34466403125991085,
+          "reading_accuracy": 0.375
+        },
+        "random": {
+          "valid_label_rate": 0.375,
+          "mean_label_mass": 0.3688732501055573,
+          "reading_accuracy": 0.25
+        },
+        "negative": {
+          "valid_label_rate": 1,
+          "mean_label_mass": 0.9972848234892568,
+          "reading_accuracy": 1
+        }
+      },
+      "baseline_reading": {
+        "valid_label_rate": 1,
+        "mean_label_mass": 0.9999999870685841,
+        "reading_accuracy": 1
+      },
+      "passes": false
+    }
+  ],
+  "visible_controls": {
+    "fruit": {
+      "mean_log_odds": 6.2850024700164795,
+      "mean_family_mass": 0.00014238755869211417
+    },
+    "music": {
+      "mean_log_odds": 2.6259639263153076,
+      "mean_family_mass": 1.9209617690307823e-05
+    }
+  },
+  "selected_by_site": {
+    "carrier": null,
+    "response": null
+  },
+  "evaluation_run": false,
+  "decision": "Calibration diagnostic only; no self-monitoring verdict."
+}

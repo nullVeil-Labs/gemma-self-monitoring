@@ -1,0 +1,9 @@
+{
+  "status": "aborted_numerical_check",
+  "evaluation_run": false,
+  "completed_contexts": 3,
+  "completed_context_forward_calls": 138,
+  "intervention_count": 0,
+  "reason": "Batched/serial score discrepancy exceeded frozen 0.25-nat tolerance in the next context. Its exact discrepancy was not saved by that runner; do not invent it.",
+  "evidence": "Process exited 1 with ValueError from word_scoring.evaluate; partial raw rows preserved."
+}

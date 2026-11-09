@@ -1,0 +1,21 @@
+{
+  "_note": "Machine-specific paths were redacted for publication on 2026-11-09; fill in local values to rerun.",
+  "status": "Pilot-010 semantic classifier rejected by benchmark; new-response testing and self-monitoring evaluation not run.",
+  "model_directory": "<MODEL_DIR>",
+  "model_identity": "User-confirmed same checkpoint used in prior work",
+  "model_hash_policy": "skipped_at_user_request",
+  "candidate_python": "<RUNTIME_PROJECT>/.venv/Scripts/python.exe",
+  "previous_runtime_review": "<RUNTIME_PROJECT>/DEPENDENCY-VET.md",
+  "previous_runtime_inventory": "<RUNTIME_PROJECT>/runtime-vet.json",
+  "prior_numerical_validation": "<RUNTIME_PROJECT>/results/numerical-validation.json",
+  "runtime_review_must_be_refreshed_if_stale": true,
+  "self_monitoring_experiment_run": false,
+  "calibration_run": true,
+  "latest_run": "pilot-010-20260911-a",
+  "visible_readout_validated": true,
+  "carrier_steering_calibrated": true,
+  "selected_carrier_strength": 0.05,
+  "chat_steering_validated": false,
+  "complete_word_readout_validated": false,
+  "semantic_classifier_validated": false
+}

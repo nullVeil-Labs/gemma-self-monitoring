@@ -1,0 +1,21 @@
+{
+  "tests_passed_before_run": 56,
+  "protocol_runner_and_scoring_source_match": true,
+  "saved_reanalysis_matches": true,
+  "contexts": 24,
+  "prefix_nodes": 8400,
+  "forward_calls": 8424,
+  "candidate_paths_per_context": [
+    240
+  ],
+  "all_shared_edges_consistent": true,
+  "all_branch_probability_sums_valid": true,
+  "max_branch_probability_excess": 5.0248784688733394e-08,
+  "independent_complete_candidate_probability_sums_match": true,
+  "serial_repeat_max_difference": 0,
+  "category_cells_passed": 10,
+  "category_cells_total": 16,
+  "intervention_count": 0,
+  "evaluation_run": false,
+  "model_hashing": "skipped_at_user_request"
+}

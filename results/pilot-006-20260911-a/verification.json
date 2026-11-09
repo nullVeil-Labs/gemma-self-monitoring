@@ -1,0 +1,17 @@
+{
+  "tests_passed_before_run": 44,
+  "current_reanalysis_matches": true,
+  "frozen_protocol_and_source_match": true,
+  "raw_rows": 4,
+  "donor_forwards": 12,
+  "total_forwards": 16,
+  "intervention_forwards": 0,
+  "reading_correct": 0,
+  "reading_total": 0,
+  "evaluation_run": false,
+  "restoration_checks_run": false,
+  "directions_exactly_match_pilot005": true,
+  "max_norm_ratio_error": 0,
+  "max_log_odds_error_vs_masses": 1.9361644518767207e-06,
+  "model_hashing": "skipped_at_user_request"
+}

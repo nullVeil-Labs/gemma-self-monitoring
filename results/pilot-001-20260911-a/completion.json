@@ -1,0 +1,5 @@
+{
+  "status": "stopped_at_calibration",
+  "evaluation_run": false,
+  "reason": "Stop: calibration did not establish a usable, format-preserving perturbation."
+}

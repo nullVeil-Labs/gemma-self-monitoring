@@ -1,0 +1,7 @@
+{
+  "status": "visible_readout_complete",
+  "passes_readout_gates": true,
+  "forward_count": 48,
+  "intervention_count": 0,
+  "evaluation_run": false
+}

@@ -1,0 +1,7 @@
+{
+  "status": "complete_word_readout_complete",
+  "evaluation_run": false,
+  "passes_readout_gates": false,
+  "contexts": 24,
+  "intervention_count": 0
+}

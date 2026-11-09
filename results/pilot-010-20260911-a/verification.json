@@ -1,0 +1,35 @@
+{
+  "tests_passed_before_run": 64,
+  "frozen_protocol_runner_and_module_match": true,
+  "raw_reanalysis_matches": true,
+  "letter_to_class_mapping_verified": true,
+  "probability_sums_verified": true,
+  "response_only_judge_prompts_verified": true,
+  "benchmark_rows": 96,
+  "accuracy_counts": {
+    "fruit": {
+      "correct": 24,
+      "total": 24
+    },
+    "music": {
+      "correct": 24,
+      "total": 24
+    },
+    "neither": {
+      "correct": 13,
+      "total": 24
+    },
+    "ambiguous": {
+      "correct": 5,
+      "total": 24
+    }
+  },
+  "mapping_agreement_items": 41,
+  "mapping_items_total": 48,
+  "critical_correct": 5,
+  "critical_total": 32,
+  "new_response_generation_run": false,
+  "self_monitoring_evaluation_run": false,
+  "intervention_count": 0,
+  "model_hashing": "skipped_at_user_request"
+}

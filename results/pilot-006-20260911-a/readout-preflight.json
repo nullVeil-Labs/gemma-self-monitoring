@@ -1,0 +1,13 @@
+{
+  "controls": {
+    "fruit": {
+      "mean_log_odds": 30.95838737487793,
+      "mean_family_mass": 9.501492124085966e-09
+    },
+    "music": {
+      "mean_log_odds": 39.0734806060791,
+      "mean_family_mass": 2.382678186696463e-10
+    }
+  },
+  "passes": false
+}

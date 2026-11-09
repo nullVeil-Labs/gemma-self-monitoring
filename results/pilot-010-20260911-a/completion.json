@@ -1,0 +1,7 @@
+{
+  "status": "stopped_at_semantic_benchmark",
+  "response_coverage_run": false,
+  "evaluation_run": false,
+  "forward_calls": 96,
+  "intervention_count": 0
+}

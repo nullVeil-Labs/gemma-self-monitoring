@@ -1,0 +1,815 @@
+{
+  "note": "Regenerated 2026-11-09 after redacting machine-specific paths for publication; ARCHIVE-INVENTORY.pre-redaction.json holds the original fingerprints. No numeric results were changed. AI-agent instruction files (AGENTS.md) are kept local and are not part of this repository; ARCHIVE-INVENTORY.pre-redaction.json still lists their original fingerprints.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 96,
+      "sha256": "5f3fe310f260b3ce804314bf34034dffc942050bd32044edcfe61491b9018129"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 94,
+      "sha256": "77346e3c6ce779f17619fed825d51d7321ad2ec46b89174f9564bbbf4632d80f"
+    },
+    {
+      "path": "ARCHIVE-INDEX.md",
+      "bytes": 5218,
+      "sha256": "4c57f2571f8bc284c009479c7c874db56194591aec9b536a386eb4a6bf3689d2"
+    },
+    {
+      "path": "ARCHIVE-INVENTORY.pre-redaction.json",
+      "bytes": 23696,
+      "sha256": "9c66eba8c489c69f4dcb3483f88f3093719fc539e7ef99f7fc06682c08a9232d"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1091,
+      "sha256": "23e64837ae28687ec26a52b3d4e511cdcc846ba02c7fc8357da4edf12f29c16e"
+    },
+    {
+      "path": "LICENSE-DATA",
+      "bytes": 678,
+      "sha256": "9b48ad9ac5a2fc91d5a15ec1d22e2b9c3c114b6aae7c78e4885df5642444b77e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4018,
+      "sha256": "69339645dd9761b3edbd4632311ff31276600f85581ed740efefdd3c0a71ab65"
+    },
+    {
+      "path": "RESEARCH_PLAN.md",
+      "bytes": 8596,
+      "sha256": "aa9d9e4b35db4ef42c6f771a9dbda04db7aabd3b6f7e89a400567c7e944b68ab"
+    },
+    {
+      "path": "arithmetic-confidence/.gitignore",
+      "bytes": 47,
+      "sha256": "a4923e79438b04cb3bbe47adf5a819cbaf637ddfd8bc07f55eeadb419999d3b8"
+    },
+    {
+      "path": "arithmetic-confidence/README.md",
+      "bytes": 2194,
+      "sha256": "f078231c194620ba6a76ec4540386d22487223cd66ff5789c4f67488b6f36010"
+    },
+    {
+      "path": "arithmetic-confidence/local-resources.json",
+      "bytes": 490,
+      "sha256": "0e28cec4a955735c7fe4d07a58e7e6ae89238c9f930228d2656526e09efcaa2c"
+    },
+    {
+      "path": "arithmetic-confidence/protocol.json",
+      "bytes": 26250,
+      "sha256": "1e9b01631144a3488bfd2a08df0113d228cd1675a2a689c189c3449c8b6b0ee3"
+    },
+    {
+      "path": "arithmetic-confidence/reports/arithmetic-001.md",
+      "bytes": 5559,
+      "sha256": "ef32a232ebb3b967fd0e782080308c902ee3729bc2d565d784d235ce9a4eb8d5"
+    },
+    {
+      "path": "arithmetic-confidence/results/arithmetic-001-20260911-a/calibration-schedule.json",
+      "bytes": 6843,
+      "sha256": "99ed37d5926821f7925c6603f021559cdd9ba913bf773cc8c38f09e7704497a6"
+    },
+    {
+      "path": "arithmetic-confidence/results/arithmetic-001-20260911-a/calibration-summary.json",
+      "bytes": 562,
+      "sha256": "7ac30f0919ee01b04fcb9176f25405ef13fa5cdfb7882881f4775470ab019479"
+    },
+    {
+      "path": "arithmetic-confidence/results/arithmetic-001-20260911-a/calibration.jsonl",
+      "bytes": 143488,
+      "sha256": "ca1d4903e65008cbd2c9085f760abbf1a7048c0257d5c8449ecba66563f04f61"
+    },
+    {
+      "path": "arithmetic-confidence/results/arithmetic-001-20260911-a/completion.json",
+      "bytes": 137,
+      "sha256": "886635544d481fa9f20b52c6eb8c5c9868b4b1f7798b798b0f30d33b8622092a"
+    },
+    {
+      "path": "arithmetic-confidence/results/arithmetic-001-20260911-a/evaluation-schedule.json",
+      "bytes": 13558,
+      "sha256": "7a7eba961b058ed87c729099a23018e7a4a2b3bae3c5f20d290c4ff76d9dbdc9"
+    },
+    {
+      "path": "arithmetic-confidence/results/arithmetic-001-20260911-a/evaluation-summary.json",
+      "bytes": 1592,
+      "sha256": "e40dbe0331de736e7a2706236fe789ce7e9e06e1d14f440adc816c7fdbbb3e4f"
+    },
+    {
+      "path": "arithmetic-confidence/results/arithmetic-001-20260911-a/evaluation.jsonl",
+      "bytes": 285095,
+      "sha256": "c2ef31da2ed48a63e8d5da82de086d39dcad4bf997bac0d9fda344243a67235f"
+    },
+    {
+      "path": "arithmetic-confidence/results/arithmetic-001-20260911-a/manifest.json",
+      "bytes": 32953,
+      "sha256": "34c26a5ddbfe6b819ffca3b45e1b4356012085bff013b1bf38845b6bea67a2ed"
+    },
+    {
+      "path": "arithmetic-confidence/results/arithmetic-001-20260911-a/run.py.snapshot",
+      "bytes": 14837,
+      "sha256": "732eb1d5679b26de4d0ac708c9f1475a167d4a0813a4efa7ccce71b0c010544a"
+    },
+    {
+      "path": "arithmetic-confidence/results/arithmetic-001-20260911-a/runtime.json",
+      "bytes": 351,
+      "sha256": "8c5e714777b2ee234ca7df0213f09d4e3014434a2726fad99f67a39dab02f5f0"
+    },
+    {
+      "path": "arithmetic-confidence/results/arithmetic-001-20260911-a/runtime.py.snapshot",
+      "bytes": 2850,
+      "sha256": "6dd8c6a3eef75a232f0e8e70cdf29100173274576ae6e43543e9c2dd8cf1796f"
+    },
+    {
+      "path": "arithmetic-confidence/results/arithmetic-001-20260911-a/tests.py.snapshot",
+      "bytes": 5395,
+      "sha256": "f555b7f2d59322235361d20712bcdd742bec6d9a632c5767e7c990e0abeda6dd"
+    },
+    {
+      "path": "arithmetic-confidence/results/arithmetic-001-20260911-a/verification.json",
+      "bytes": 501,
+      "sha256": "61cbfd88084afe28a66cfaa97f3782a20e88ce9e874bf0b4e097184b634ca917"
+    },
+    {
+      "path": "arithmetic-confidence/run.py",
+      "bytes": 14837,
+      "sha256": "732eb1d5679b26de4d0ac708c9f1475a167d4a0813a4efa7ccce71b0c010544a"
+    },
+    {
+      "path": "arithmetic-confidence/runtime.py",
+      "bytes": 2850,
+      "sha256": "6dd8c6a3eef75a232f0e8e70cdf29100173274576ae6e43543e9c2dd8cf1796f"
+    },
+    {
+      "path": "arithmetic-confidence/tests.py",
+      "bytes": 5395,
+      "sha256": "f555b7f2d59322235361d20712bcdd742bec6d9a632c5767e7c990e0abeda6dd"
+    },
+    {
+      "path": "local-resources.json",
+      "bytes": 1116,
+      "sha256": "dcc61d79044239690f4d55e85dd3bfd6ecfaedd04b02dbc57b29f6d5df284427"
+    },
+    {
+      "path": "protocols/pilot-001.json",
+      "bytes": 6151,
+      "sha256": "6f31c02de77e49cbfbe17d4a89ae02db2ceec52be9d15ac355a91ad0d1d1f405"
+    },
+    {
+      "path": "protocols/pilot-002.json",
+      "bytes": 5341,
+      "sha256": "8a13fec3214b318f880da3a69e7e1d098a73d1429daf027336b94d55c2d0998e"
+    },
+    {
+      "path": "protocols/pilot-003.json",
+      "bytes": 6050,
+      "sha256": "106f30a21bac29896cdfcc1cb379ee8f13736bbf3a83eee1af2b6590a98405c2"
+    },
+    {
+      "path": "protocols/pilot-004.json",
+      "bytes": 5729,
+      "sha256": "33b5b0542d74e4ec44687fadcd4ac63c98113451e0a7356393e551ba8b6fffd0"
+    },
+    {
+      "path": "protocols/pilot-005.json",
+      "bytes": 7871,
+      "sha256": "55fe606b68e9976d43147f0e9f45dc2da48e60541c60ef67256a80be5c8143d5"
+    },
+    {
+      "path": "protocols/pilot-006.json",
+      "bytes": 10130,
+      "sha256": "bdb36779e29edeac8a9c5b5013752822abd63bf696bb227f8c85f5314da3114b"
+    },
+    {
+      "path": "protocols/pilot-007.json",
+      "bytes": 11029,
+      "sha256": "c6659b23065ce3ad5f862e0e90ba08a862769e6266b0b629b5578461a45681e8"
+    },
+    {
+      "path": "protocols/pilot-008.json",
+      "bytes": 5166,
+      "sha256": "16dadfc81ef5d8b22689313fd2311daaa6bcd513595fdb6c7e7f1290a8ee0886"
+    },
+    {
+      "path": "protocols/pilot-009.json",
+      "bytes": 5371,
+      "sha256": "3ede2c455081838e062f5f91506ef779e7256c1f1ba91ebdcfb87f891464dd97"
+    },
+    {
+      "path": "protocols/pilot-010.json",
+      "bytes": 11111,
+      "sha256": "f7c8f9aa064e81df76d0552f47317ee8580d62364e1463587bad52f09dbd2e19"
+    },
+    {
+      "path": "reports/pilot-001-20260911-a.md",
+      "bytes": 4969,
+      "sha256": "e07b49bab9f2a49e3420ace69635c6f56e4a6a1fd4a6401a43b57d132ff9cd2b"
+    },
+    {
+      "path": "reports/pilot-002-20260911-a.md",
+      "bytes": 3743,
+      "sha256": "8b8065e179405e8b50894a45f9d3ffa6006053b8acd8d605dc21e21d51d6ec5b"
+    },
+    {
+      "path": "reports/pilot-003-20260911-a.md",
+      "bytes": 3053,
+      "sha256": "ccb5be5594f5aaf01f59ba9c3c77dc8f1ed0a0f5aaa2129de0feddc5f7895a3e"
+    },
+    {
+      "path": "reports/pilot-004-20260911-a.md",
+      "bytes": 5402,
+      "sha256": "822bf9e2b98869e72adde6a29c2a3ebdd96f44eb73fca1861b7ebe86b92f6448"
+    },
+    {
+      "path": "reports/pilot-005-20260911-a.md",
+      "bytes": 6392,
+      "sha256": "14aa1da0ffef15f937033e7106f99043a6d753c05173aca007d91247da3408e1"
+    },
+    {
+      "path": "reports/pilot-006-20260911-a.md",
+      "bytes": 1617,
+      "sha256": "039b0d6e9f59546a548d5a66b4516afeae358550590755e79872fe3fd1fca32a"
+    },
+    {
+      "path": "reports/pilot-007-20260911-a.md",
+      "bytes": 6243,
+      "sha256": "9c0239ced8d9726858dc6c7c06ad7e7628987532a69e209ca4aaa9775d4b942a"
+    },
+    {
+      "path": "reports/pilot-008-20260911-a.md",
+      "bytes": 1698,
+      "sha256": "6bed3125eaeff386f55913e7bfe22f862223c9d94f26766cb38ffc092f8353e5"
+    },
+    {
+      "path": "reports/pilot-009-20260911-a.md",
+      "bytes": 7112,
+      "sha256": "ff3bd4947551901c17eb9ca0768d3b798197bcf022e3c01a6e4dfeb4df64669a"
+    },
+    {
+      "path": "reports/pilot-010-20260911-a.md",
+      "bytes": 5507,
+      "sha256": "4766a1d1376270c83c65fedacf343f3891c139e78cf45c02dde834ada8279873"
+    },
+    {
+      "path": "results/pilot-001-20260911-a/calibration-directions.json",
+      "bytes": 300747,
+      "sha256": "54361ed67c1c71ab42833973d6c029f1e859701ca9988769cdbd05b89d1eff07"
+    },
+    {
+      "path": "results/pilot-001-20260911-a/calibration-donors.json",
+      "bytes": 2145,
+      "sha256": "67778117b16e6015f9823da5dc3a8dcfe6ba8050b073e573edf5654b0f2ecb85"
+    },
+    {
+      "path": "results/pilot-001-20260911-a/calibration-schedule.json",
+      "bytes": 76781,
+      "sha256": "595ddf5dbabb121b7ea2384bcb5e46f8e6e2493301f1147de871a33f463996f3"
+    },
+    {
+      "path": "results/pilot-001-20260911-a/calibration-summary.json",
+      "bytes": 2425,
+      "sha256": "4f9da45d449af08d7d42d84d170934204b80662b64c008e4dcddd1c74605fd77"
+    },
+    {
+      "path": "results/pilot-001-20260911-a/calibration.jsonl",
+      "bytes": 225841,
+      "sha256": "103cb095f0b73001720746660a881c2bd9a0c355162e6548c23c054dc22193b4"
+    },
+    {
+      "path": "results/pilot-001-20260911-a/completion.json",
+      "bytes": 166,
+      "sha256": "f5a2f9305bf432843ebce093af39f3766e8c123c90de66ebaa1057c529417add"
+    },
+    {
+      "path": "results/pilot-001-20260911-a/manifest.json",
+      "bytes": 11238,
+      "sha256": "07526aebe11da243a9fdff5fb4e9b293ba4a46555eb60d98935702085ea900dc"
+    },
+    {
+      "path": "results/pilot-001-20260911-a/runner-source.py",
+      "bytes": 22110,
+      "sha256": "5724946ca6d24cd881bc3f8eae25f13bdef1b996b9835815cea47c596b603cb5"
+    },
+    {
+      "path": "results/pilot-001-20260911-a/runtime.json",
+      "bytes": 253,
+      "sha256": "39228a4ca0261f0c4bff1f77bef92a69dfe5bc872f8a3e5ab676ead721672c16"
+    },
+    {
+      "path": "results/pilot-001-20260911-a/verification.json",
+      "bytes": 303,
+      "sha256": "4dd95ff48c3173c822ecb33eb18f9872338519f8e2c3e3b209f96321996b07e1"
+    },
+    {
+      "path": "results/pilot-002-20260911-a/calibration-directions.json",
+      "bytes": 300747,
+      "sha256": "54361ed67c1c71ab42833973d6c029f1e859701ca9988769cdbd05b89d1eff07"
+    },
+    {
+      "path": "results/pilot-002-20260911-a/calibration-donors.json",
+      "bytes": 2145,
+      "sha256": "67778117b16e6015f9823da5dc3a8dcfe6ba8050b073e573edf5654b0f2ecb85"
+    },
+    {
+      "path": "results/pilot-002-20260911-a/calibration-schedule.json",
+      "bytes": 151045,
+      "sha256": "4c4431ea01eb082a50be87bc7412a2ac6160ad005f847e02b267fd4e1cc6ae4d"
+    },
+    {
+      "path": "results/pilot-002-20260911-a/calibration-summary.json",
+      "bytes": 9318,
+      "sha256": "b40c36d2456cb33fff7902e8a1617a6d72259eb13e1a19e05442cb6dc5a1f224"
+    },
+    {
+      "path": "results/pilot-002-20260911-a/calibration.jsonl",
+      "bytes": 404050,
+      "sha256": "531207573c3c3775e5608b9d0c43ceb14e5c6bfb85f31e7fd39b4ed143285184"
+    },
+    {
+      "path": "results/pilot-002-20260911-a/completion.json",
+      "bytes": 156,
+      "sha256": "fa4ba38041c6f8fa169fd2f78287ebcca245ea2916d079dbbc1e86b12471db35"
+    },
+    {
+      "path": "results/pilot-002-20260911-a/manifest.json",
+      "bytes": 10467,
+      "sha256": "c036c8f7aace537f7fd1bbbd9095012b63490b53ceb58c3817d535b40f514aee"
+    },
+    {
+      "path": "results/pilot-002-20260911-a/runner-source.py",
+      "bytes": 31295,
+      "sha256": "e6e09fa8d21326153787c2689fa2ed01f9e77d9387d6a3c7e12dae33cb0be27d"
+    },
+    {
+      "path": "results/pilot-002-20260911-a/runtime.json",
+      "bytes": 253,
+      "sha256": "39228a4ca0261f0c4bff1f77bef92a69dfe5bc872f8a3e5ab676ead721672c16"
+    },
+    {
+      "path": "results/pilot-002-20260911-a/verification.json",
+      "bytes": 154,
+      "sha256": "9325fc97ea40dc0004eed11b0fcca4ed7865cb522ae955937d4a7a40b6877acd"
+    },
+    {
+      "path": "results/pilot-002-20260911-a/word-bank-tokens.json",
+      "bytes": 225,
+      "sha256": "2d96ae354931eb5c58fad773e976bc0fc2f2cd57fba03e5be37df5b0a1faf4e9"
+    },
+    {
+      "path": "results/pilot-003-20260911-a/calibration-directions.json",
+      "bytes": 300747,
+      "sha256": "54361ed67c1c71ab42833973d6c029f1e859701ca9988769cdbd05b89d1eff07"
+    },
+    {
+      "path": "results/pilot-003-20260911-a/calibration-donors.json",
+      "bytes": 2145,
+      "sha256": "67778117b16e6015f9823da5dc3a8dcfe6ba8050b073e573edf5654b0f2ecb85"
+    },
+    {
+      "path": "results/pilot-003-20260911-a/calibration-schedule.json",
+      "bytes": 129061,
+      "sha256": "959eeeb432c6b014b3e30c90c2cdfd11e429c98bda937ad50cdf2c97b73ca316"
+    },
+    {
+      "path": "results/pilot-003-20260911-a/calibration-summary.json",
+      "bytes": 507,
+      "sha256": "cbc079a37b9de91f2a5f7fefa87e546a80004d4d8d9b10fc4040b0ea173758a4"
+    },
+    {
+      "path": "results/pilot-003-20260911-a/calibration.jsonl",
+      "bytes": 4597,
+      "sha256": "86f792ef61bf7f3a2cf336237865d517bf355a31eb10141f555ce0e2857dff44"
+    },
+    {
+      "path": "results/pilot-003-20260911-a/completion.json",
+      "bytes": 153,
+      "sha256": "80348c330eae1d24171580dc87cfbd5796da7d4b211b18f218995a4626f465e4"
+    },
+    {
+      "path": "results/pilot-003-20260911-a/manifest.json",
+      "bytes": 11212,
+      "sha256": "d705077bd9618bd7dc40b98adc4160c801deede1ac9f578537c103aea9c7574a"
+    },
+    {
+      "path": "results/pilot-003-20260911-a/readout-preflight.json",
+      "bytes": 280,
+      "sha256": "d6d50d69b6ebf7e02193a0250a94597ed7755dbd3f9b9c0772fc787186dfaf8c"
+    },
+    {
+      "path": "results/pilot-003-20260911-a/runner-source.py",
+      "bytes": 33324,
+      "sha256": "ba54651b04c4930fa359c1caa0d495cd1ec6755b67e91362a38fb76b0da4a559"
+    },
+    {
+      "path": "results/pilot-003-20260911-a/runtime.json",
+      "bytes": 253,
+      "sha256": "39228a4ca0261f0c4bff1f77bef92a69dfe5bc872f8a3e5ab676ead721672c16"
+    },
+    {
+      "path": "results/pilot-003-20260911-a/verification.json",
+      "bytes": 152,
+      "sha256": "f0c057bdbac796e5b44682abecf2c4e0431c8d4dab7dfc5e38b05147e53101f0"
+    },
+    {
+      "path": "results/pilot-003-20260911-a/word-bank-tokens.json",
+      "bytes": 225,
+      "sha256": "2d96ae354931eb5c58fad773e976bc0fc2f2cd57fba03e5be37df5b0a1faf4e9"
+    },
+    {
+      "path": "results/pilot-004-20260911-a/calibration-schedule.json",
+      "bytes": 23321,
+      "sha256": "c1deeef66b4af0f023614919ca61b026980154d10148b0102296879e51a11bc2"
+    },
+    {
+      "path": "results/pilot-004-20260911-a/calibration-summary.json",
+      "bytes": 2198,
+      "sha256": "4d3c5534bd1fc72c72124378d5b4394db44b802727aa8f4f45fed8c5b2630d08"
+    },
+    {
+      "path": "results/pilot-004-20260911-a/calibration.jsonl",
+      "bytes": 323305,
+      "sha256": "54f6c9750148c93e8cc0a4136577b9f89e858e799deab2c6e9a32c164f6b0c1a"
+    },
+    {
+      "path": "results/pilot-004-20260911-a/completion.json",
+      "bytes": 159,
+      "sha256": "dac63aa4d656444d06df54929b467f4a06ac12de94e3e5c62794429ba6eac259"
+    },
+    {
+      "path": "results/pilot-004-20260911-a/manifest.json",
+      "bytes": 10794,
+      "sha256": "bea274f3c04b14cfb779248e802d31348043344a07d971350501f3c21a243870"
+    },
+    {
+      "path": "results/pilot-004-20260911-a/runner-source.py",
+      "bytes": 42339,
+      "sha256": "9eb570455c9f4e50007796707f38920ca720c319aa94d3195899d04e46f88714"
+    },
+    {
+      "path": "results/pilot-004-20260911-a/runtime.json",
+      "bytes": 253,
+      "sha256": "39228a4ca0261f0c4bff1f77bef92a69dfe5bc872f8a3e5ab676ead721672c16"
+    },
+    {
+      "path": "results/pilot-004-20260911-a/verification.json",
+      "bytes": 328,
+      "sha256": "ca6252b101de7e24d41479a16cf91a6d18d3a3dda117d3d4bf093849bead974c"
+    },
+    {
+      "path": "results/pilot-004-20260911-a/word-bank-tokens.json",
+      "bytes": 11876,
+      "sha256": "69ce6116655a7fc817e8cc8884fe977213c1887dd687bf22d66e2e3eebae909a"
+    },
+    {
+      "path": "results/pilot-005-20260911-a/calibration-directions.json",
+      "bytes": 300747,
+      "sha256": "54361ed67c1c71ab42833973d6c029f1e859701ca9988769cdbd05b89d1eff07"
+    },
+    {
+      "path": "results/pilot-005-20260911-a/calibration-donors.json",
+      "bytes": 2145,
+      "sha256": "67778117b16e6015f9823da5dc3a8dcfe6ba8050b073e573edf5654b0f2ecb85"
+    },
+    {
+      "path": "results/pilot-005-20260911-a/calibration-schedule.json",
+      "bytes": 153981,
+      "sha256": "01e993641bd798edda1fab853922b5f2bafa7bf1fd49a5fd709bef3db1e15ba3"
+    },
+    {
+      "path": "results/pilot-005-20260911-a/calibration-summary.json",
+      "bytes": 11161,
+      "sha256": "e766d9be9fc0a968862c341b91dd19d01f510d53d7db7b0ad16c80032c99b413"
+    },
+    {
+      "path": "results/pilot-005-20260911-a/calibration.jsonl",
+      "bytes": 480215,
+      "sha256": "ab154f19ea2492c76fb104d208fa2d39cf1aaa4f957f35e197f294a37de65fcb"
+    },
+    {
+      "path": "results/pilot-005-20260911-a/completion.json",
+      "bytes": 133,
+      "sha256": "e1f27c4aa805f547fdb322a3b0a377d68ec46d389bd85f63d842e2f7289ca292"
+    },
+    {
+      "path": "results/pilot-005-20260911-a/manifest.json",
+      "bytes": 13198,
+      "sha256": "a54f2865f37177b75598050f401bcbff41d5d68d6e2aea428ef36a852b7ecfb6"
+    },
+    {
+      "path": "results/pilot-005-20260911-a/readout-preflight.json",
+      "bytes": 272,
+      "sha256": "973e40652efa8e0aa7aef05ef068ad8acfcf0183a6d45e02edc631cb4d7ae42c"
+    },
+    {
+      "path": "results/pilot-005-20260911-a/restoration-checks.json",
+      "bytes": 20175,
+      "sha256": "f1162511332e190f5d189c288abdf4bc8047ffda9ea685d643cafeeaf71283b5"
+    },
+    {
+      "path": "results/pilot-005-20260911-a/runner-source.py",
+      "bytes": 45528,
+      "sha256": "2cd01501560c818452e49605bb365148d4f25a3f9ba8d330c4fdeb274f1b5186"
+    },
+    {
+      "path": "results/pilot-005-20260911-a/runtime.json",
+      "bytes": 253,
+      "sha256": "39228a4ca0261f0c4bff1f77bef92a69dfe5bc872f8a3e5ab676ead721672c16"
+    },
+    {
+      "path": "results/pilot-005-20260911-a/verification.json",
+      "bytes": 653,
+      "sha256": "4b1d9ab03b9e7cf107471716be5c2be82c0fe1e18edb63cc687cf1a10603314a"
+    },
+    {
+      "path": "results/pilot-005-20260911-a/word-bank-spellings.json",
+      "bytes": 9578,
+      "sha256": "f4eaaa6208734eafd092834391d6c267f5dea08fa28b56792cdff0157de0e7d6"
+    },
+    {
+      "path": "results/pilot-005-20260911-a/word-bank-tokens.json",
+      "bytes": 905,
+      "sha256": "092567e5d6b1b349878e3d1f481571a674210a36de8626eb4e6389917687e876"
+    },
+    {
+      "path": "results/pilot-006-20260911-a/calibration-directions.json",
+      "bytes": 300747,
+      "sha256": "54361ed67c1c71ab42833973d6c029f1e859701ca9988769cdbd05b89d1eff07"
+    },
+    {
+      "path": "results/pilot-006-20260911-a/calibration-donors.json",
+      "bytes": 2145,
+      "sha256": "67778117b16e6015f9823da5dc3a8dcfe6ba8050b073e573edf5654b0f2ecb85"
+    },
+    {
+      "path": "results/pilot-006-20260911-a/calibration-schedule.json",
+      "bytes": 65641,
+      "sha256": "f4878f442760d9e0bdeee32dd005331d78bc9e48a584941305214922ce684f96"
+    },
+    {
+      "path": "results/pilot-006-20260911-a/calibration-summary.json",
+      "bytes": 482,
+      "sha256": "b0941b69a7eb84a6558e47e9364f0224caec1c82fccc657b4073a1be1bab807f"
+    },
+    {
+      "path": "results/pilot-006-20260911-a/calibration.jsonl",
+      "bytes": 7781,
+      "sha256": "ed36273432fefe4c1f96752eeb577b338b9a6df19ff051b83a565b2ee3e11495"
+    },
+    {
+      "path": "results/pilot-006-20260911-a/completion.json",
+      "bytes": 74,
+      "sha256": "c57bcdaf9de1f04b27ced65e364a12d059d91c70e082efa4a99eb62350d69428"
+    },
+    {
+      "path": "results/pilot-006-20260911-a/manifest.json",
+      "bytes": 15683,
+      "sha256": "c04c50472db01cb1930c02b7a6e812492a76cd117a8f46200cba2fb2d651d8fe"
+    },
+    {
+      "path": "results/pilot-006-20260911-a/readout-preflight.json",
+      "bytes": 278,
+      "sha256": "355764ffbb0b2aa9ff888e97ee1a28a7757909aac38a914814a136eba7cd2ba1"
+    },
+    {
+      "path": "results/pilot-006-20260911-a/runner-source.py",
+      "bytes": 55755,
+      "sha256": "5c50dedb24feceae43b915b8af0e71a5d54d463806e511292ee7f215f7cbb01d"
+    },
+    {
+      "path": "results/pilot-006-20260911-a/runtime.json",
+      "bytes": 253,
+      "sha256": "39228a4ca0261f0c4bff1f77bef92a69dfe5bc872f8a3e5ab676ead721672c16"
+    },
+    {
+      "path": "results/pilot-006-20260911-a/verification.json",
+      "bytes": 516,
+      "sha256": "993cfdfd2a37d5ef0466aa7e7cf4bb48116d160b885811eec9cbd1acbac65391"
+    },
+    {
+      "path": "results/pilot-006-20260911-a/word-bank-spellings.json",
+      "bytes": 9578,
+      "sha256": "f4eaaa6208734eafd092834391d6c267f5dea08fa28b56792cdff0157de0e7d6"
+    },
+    {
+      "path": "results/pilot-006-20260911-a/word-bank-tokens.json",
+      "bytes": 905,
+      "sha256": "092567e5d6b1b349878e3d1f481571a674210a36de8626eb4e6389917687e876"
+    },
+    {
+      "path": "results/pilot-007-20260911-a/calibration-directions.json",
+      "bytes": 300747,
+      "sha256": "54361ed67c1c71ab42833973d6c029f1e859701ca9988769cdbd05b89d1eff07"
+    },
+    {
+      "path": "results/pilot-007-20260911-a/calibration-donors.json",
+      "bytes": 2145,
+      "sha256": "67778117b16e6015f9823da5dc3a8dcfe6ba8050b073e573edf5654b0f2ecb85"
+    },
+    {
+      "path": "results/pilot-007-20260911-a/calibration-schedule.json",
+      "bytes": 65681,
+      "sha256": "639a2d34acea4afe981c5ad6575443c412c0fe301cbcd74a1b180e6b29441d8c"
+    },
+    {
+      "path": "results/pilot-007-20260911-a/calibration-summary.json",
+      "bytes": 4237,
+      "sha256": "9be4bfeb1cd592af57d83977e7e1ac012fb70763e66b793fd49e94fc319a6533"
+    },
+    {
+      "path": "results/pilot-007-20260911-a/calibration.jsonl",
+      "bytes": 245660,
+      "sha256": "7271331f1840a52e93a7ff6d1dc3ad31f2043cdcce50dd572e5249a6aaaaa8cf"
+    },
+    {
+      "path": "results/pilot-007-20260911-a/completion.json",
+      "bytes": 74,
+      "sha256": "c57bcdaf9de1f04b27ced65e364a12d059d91c70e082efa4a99eb62350d69428"
+    },
+    {
+      "path": "results/pilot-007-20260911-a/manifest.json",
+      "bytes": 16598,
+      "sha256": "62d5cab6fe049302dcc20e1e3d51954387bfcd18fb412d627dda08d676e64a1c"
+    },
+    {
+      "path": "results/pilot-007-20260911-a/readout-preflight.json",
+      "bytes": 271,
+      "sha256": "89754a0a6f0f306f17cde6b5feb032aaf6cc9c52f8a6b272abb208383da14092"
+    },
+    {
+      "path": "results/pilot-007-20260911-a/runner-source.py",
+      "bytes": 56476,
+      "sha256": "c2b97fb95fda08f3681d151383e93f44c3f0c1b69b083cdc497acc3d9eff6b3a"
+    },
+    {
+      "path": "results/pilot-007-20260911-a/runtime.json",
+      "bytes": 253,
+      "sha256": "39228a4ca0261f0c4bff1f77bef92a69dfe5bc872f8a3e5ab676ead721672c16"
+    },
+    {
+      "path": "results/pilot-007-20260911-a/verification.json",
+      "bytes": 543,
+      "sha256": "f32b47680d4b04dafe091bbdff64df281f84ed6884c046bc7103899739bbac9f"
+    },
+    {
+      "path": "results/pilot-007-20260911-a/word-bank-spellings.json",
+      "bytes": 20984,
+      "sha256": "d324ff01c71052f3e6948da85ad11553bdb77d275f19514698da7a713c2984f4"
+    },
+    {
+      "path": "results/pilot-007-20260911-a/word-bank-tokens.json",
+      "bytes": 1703,
+      "sha256": "2d41d38788de7cd79efe439f3e90a7be7d1eaf1cb47826afa14ab4d34667cc69"
+    },
+    {
+      "path": "results/pilot-008-20260911-a/calibration-schedule.json",
+      "bytes": 12441,
+      "sha256": "e54d168889a545b6165bb6968aa396b1ce8243c2833bb4302c4b92d4b6da01e3"
+    },
+    {
+      "path": "results/pilot-008-20260911-a/calibration.jsonl",
+      "bytes": 163692,
+      "sha256": "06e54289faa55a25118cb6e400fa7ca2c66746c6f3fc7447aea9e49feb6feff9"
+    },
+    {
+      "path": "results/pilot-008-20260911-a/completion.json",
+      "bytes": 454,
+      "sha256": "51b1d9fea42e1d4f350957a715c43f6c3eeba5b141c733b3a50c9045fd988464"
+    },
+    {
+      "path": "results/pilot-008-20260911-a/manifest.json",
+      "bytes": 10474,
+      "sha256": "1b6cb9eef29871d9dc037e25672bb88961a497070e3b08b4dd685a1467500e0d"
+    },
+    {
+      "path": "results/pilot-008-20260911-a/runner-source.py",
+      "bytes": 59215,
+      "sha256": "edcf256f1396efa0f12038a1d43080b1489d440a77d983705c138d0fba2115e5"
+    },
+    {
+      "path": "results/pilot-008-20260911-a/runtime.json",
+      "bytes": 253,
+      "sha256": "39228a4ca0261f0c4bff1f77bef92a69dfe5bc872f8a3e5ab676ead721672c16"
+    },
+    {
+      "path": "results/pilot-008-20260911-a/word-scoring-source.py",
+      "bytes": 9952,
+      "sha256": "cdeac6d609a5afe3b58b3fc4702a022e51653da2636a89f68b634538f590df3c"
+    },
+    {
+      "path": "results/pilot-009-20260911-a/calibration-schedule.json",
+      "bytes": 12441,
+      "sha256": "e54d168889a545b6165bb6968aa396b1ce8243c2833bb4302c4b92d4b6da01e3"
+    },
+    {
+      "path": "results/pilot-009-20260911-a/calibration-summary.json",
+      "bytes": 5045,
+      "sha256": "b31474e9add4920ae85478f63482a8ff0412351a17643c88573de5bad8827963"
+    },
+    {
+      "path": "results/pilot-009-20260911-a/calibration.jsonl",
+      "bytes": 1297988,
+      "sha256": "733d5313669b812771ceec821d48dae74086e80cd3685d0332002eae6b751b59"
+    },
+    {
+      "path": "results/pilot-009-20260911-a/completion.json",
+      "bytes": 161,
+      "sha256": "2d5a8efb7b3e2433f20d0f81b335bb5f658f51eebe490360ac93ef53ac17dde7"
+    },
+    {
+      "path": "results/pilot-009-20260911-a/manifest.json",
+      "bytes": 10681,
+      "sha256": "2d126a164ff47bc904a1a1e712ef0abf5b19503a31ad8e107bd521decc699556"
+    },
+    {
+      "path": "results/pilot-009-20260911-a/runner-source.py",
+      "bytes": 59532,
+      "sha256": "5138483e4ec70881e083d289494616ac7ec5af6544aaa1bae33d307027612559"
+    },
+    {
+      "path": "results/pilot-009-20260911-a/runtime.json",
+      "bytes": 253,
+      "sha256": "39228a4ca0261f0c4bff1f77bef92a69dfe5bc872f8a3e5ab676ead721672c16"
+    },
+    {
+      "path": "results/pilot-009-20260911-a/verification.json",
+      "bytes": 666,
+      "sha256": "81571ffe6719928843c4058d570b38564543e7e399c8f1e23425ed6582d2b3c7"
+    },
+    {
+      "path": "results/pilot-009-20260911-a/word-scoring-source.py",
+      "bytes": 10033,
+      "sha256": "b0df63fe9bcd4bf702e9838f9409597e4d1ae0d092c08ddaf1836df057df7ba0"
+    },
+    {
+      "path": "results/pilot-010-20260911-a/calibration-schedule.json",
+      "bytes": 13631,
+      "sha256": "d7028d28a41e0bc0e5501d767c8c8a88ea6c77215b6fae755c9132bd0f8fc93a"
+    },
+    {
+      "path": "results/pilot-010-20260911-a/calibration-summary.json",
+      "bytes": 5382,
+      "sha256": "8145a4d55e459864198b795c6a05a1c788112caa8c4f565f51eef034a3cc6cab"
+    },
+    {
+      "path": "results/pilot-010-20260911-a/calibration.jsonl",
+      "bytes": 407257,
+      "sha256": "f46b767a2510d235445e8f021d25d9002082e90c26f4f9985beffb13b7e858b8"
+    },
+    {
+      "path": "results/pilot-010-20260911-a/classifier-label-tokens.json",
+      "bytes": 157,
+      "sha256": "abcb9cd9f2dd95ff3ee2673ca2abfda29368684484a6c05573296067c495414b"
+    },
+    {
+      "path": "results/pilot-010-20260911-a/completion.json",
+      "bytes": 166,
+      "sha256": "34166181ef45dbcb1376978b87f2e0084617b33d9583e77ea92bcaca8003b570"
+    },
+    {
+      "path": "results/pilot-010-20260911-a/manifest.json",
+      "bytes": 17013,
+      "sha256": "f8a87de8b002ddb3a6ed4b8853cdb6ca86c6a9c65266273833924b4baeb31ea3"
+    },
+    {
+      "path": "results/pilot-010-20260911-a/runner-source.py",
+      "bytes": 61832,
+      "sha256": "50ae6940d8bb829ad920cc57f0316b1dc4637e8bd6ee795d33677554a8aec796"
+    },
+    {
+      "path": "results/pilot-010-20260911-a/runtime.json",
+      "bytes": 253,
+      "sha256": "39228a4ca0261f0c4bff1f77bef92a69dfe5bc872f8a3e5ab676ead721672c16"
+    },
+    {
+      "path": "results/pilot-010-20260911-a/semantic-scoring-source.py",
+      "bytes": 11146,
+      "sha256": "a05453ef0d68d4a29606e2234fda0e38c318018478e50788bca23daf4ba9da2b"
+    },
+    {
+      "path": "results/pilot-010-20260911-a/verification.json",
+      "bytes": 852,
+      "sha256": "7444e41463789a532ae5bbe77325ab3bc795cd6b6449fa78dc812b86da6f205d"
+    },
+    {
+      "path": "run.py",
+      "bytes": 61832,
+      "sha256": "50ae6940d8bb829ad920cc57f0316b1dc4637e8bd6ee795d33677554a8aec796"
+    },
+    {
+      "path": "semantic_scoring.py",
+      "bytes": 11146,
+      "sha256": "a05453ef0d68d4a29606e2234fda0e38c318018478e50788bca23daf4ba9da2b"
+    },
+    {
+      "path": "tests.py",
+      "bytes": 39152,
+      "sha256": "407431b92f6f6aea9f89c10b04d1087a9a089cad0bdcad1c1a243aaba07009cd"
+    },
+    {
+      "path": "word_scoring.py",
+      "bytes": 10033,
+      "sha256": "b0df63fe9bcd4bf702e9838f9409597e4d1ae0d092c08ddaf1836df057df7ba0"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "id": "pilot-004",
+  "status": "Frozen before model access: visible readout validation only",
+  "seed": 20260911,
+  "dtype": "bfloat16",
+  "evaluation_tasks": [],
+  "conditions": [
+    "visible"
+  ],
+  "question": "Does a broader fixed lexical readout distinguish fresh visible fruit/music descriptions from each other and paired neutral descriptions?",
+  "scope": "48 ordinary next-token forwards; no donors, activation hooks, perturbations, training, or self-monitoring evaluation.",
+  "prefix": "Read this sentence:\n<sentence>{sentence}</sentence>\n\n",
+  "free_templates": [
+    "A related word is \"",
+    "A possible association is \""
+  ],
+  "word_banks": {
+    "fruit": [
+      "fruit",
+      "fruits",
+      "orange",
+      "oranges",
+      "banana",
+      "bananas",
+      "lemon",
+      "lemons",
+      "grape",
+      "grapes",
+      "berry",
+      "berries",
+      "cherry",
+      "cherries",
+      "mango",
+      "melon",
+      "citrus",
+      "coconut",
+      "pineapple",
+      "strawberry"
+    ],
+    "music": [
+      "music",
+      "musical",
+      "instrument",
+      "instruments",
+      "song",
+      "songs",
+      "melody",
+      "rhythm",
+      "harmony",
+      "concert",
+      "orchestra",
+      "band",
+      "guitar",
+      "drum",
+      "cello",
+      "harp",
+      "singer",
+      "singing",
+      "tune",
+      "notes"
+    ]
+  },
+  "token_policy": "Use deduplicated bare and leading-space single-token spellings. Every word must have at least one such spelling; otherwise stop before forwards. Save all encodings and selected IDs. Banks must be disjoint. No truncating multi-token words to their first token.",
+  "scoring": "Sum full-vocabulary next-token probabilities within each fixed bank; log(fruit mass / music mass) in natural-log units. For music reverse the sign. Subtract the same-template paired neutral score to quantify content selectivity. Report absolute bank mass and greedy-token coverage as well.",
+  "gate": {
+    "min_each_template_mean_family_mass": 0.001,
+    "min_each_template_correct_fraction": 0.875,
+    "min_each_template_mean_target_log_odds": 0.0,
+    "min_each_template_positive_paired_fraction": 0.875,
+    "min_each_template_mean_paired_log_odds_gain": 1.0
+  },
+  "decision": "Require every gate for both concepts and both templates. Zero scores/deltas count as failures. Completion never starts another protocol. Retain a failed result without changing this vocabulary or these thresholds.",
+  "analysis": "Descriptive feasibility validation on eight matched triplets with two templates (48 forwards). Templates are repeated measures, not independent replications; no p-values, confidence intervals, or consciousness inference.",
+  "limits": "The broader vocabulary was designed after seeing pilot-003 and includes its observed category words. These 24 sentences are new, but are hand-authored controls, not an independently sampled benchmark. Vocabulary remains incomplete and token-bank sizes can differ; paired neutral subtraction addresses baseline preference only. Passing does not validate hidden intervention detection.",
+  "controls": [
+    {
+      "id": "v01",
+      "fruit": "The scene featured sliced produce with sweet flesh and seeds.",
+      "music": "The scene featured performers keeping time through a sequence of pitches.",
+      "neutral": "The scene featured a wooden bench beside a closed door."
+    },
+    {
+      "id": "v02",
+      "fruit": "The visitor noticed a heap of freshly picked edible crops with colorful skins.",
+      "music": "The visitor noticed a performer plucking strings in a repeating pattern.",
+      "neutral": "The visitor noticed a folded towel on a bathroom shelf."
+    },
+    {
+      "id": "v03",
+      "fruit": "The description focused on juicy pulp beneath a peel, ready to be eaten.",
+      "music": "The description focused on a rehearsal in which players coordinated pitch and tempo.",
+      "neutral": "The description focused on a metal hinge connecting a door to its frame."
+    },
+    {
+      "id": "v04",
+      "fruit": "The photograph showed a bowl of sweet edible pieces cut from seeded produce.",
+      "music": "The photograph showed a conductor guiding performers through a written score.",
+      "neutral": "The photograph showed a cardboard parcel resting beside packing tape."
+    },
+    {
+      "id": "v05",
+      "fruit": "The activity involved peeling sweet produce and removing its seeds before dessert.",
+      "music": "The activity involved practicing scales and keeping a steady beat together.",
+      "neutral": "The activity involved sorting paper clips into a small storage box."
+    },
+    {
+      "id": "v06",
+      "fruit": "The person described tropical produce with thick skins and sweet edible interiors.",
+      "music": "The person described a choir combining voices into a patterned performance.",
+      "neutral": "The person described a coat hanging from a hook in the hallway."
+    },
+    {
+      "id": "v07",
+      "fruit": "The setting included branches bearing sweet edible produce ready for picking.",
+      "music": "The setting included a stage where players performed a composed piece together.",
+      "neutral": "The setting included a stairway with a handrail beside a plain wall."
+    },
+    {
+      "id": "v08",
+      "fruit": "The written passage concerned sweet harvested produce being washed, peeled, and sliced.",
+      "music": "The written passage concerned the arrangement of pitches and beats in a live performance.",
+      "neutral": "The written passage concerned the placement of a desk and chair in an office."
+    }
+  ]
+}

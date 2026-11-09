@@ -1,0 +1,64 @@
+{
+  "groups": {
+    "fruit/template-0": {
+      "count": 8,
+      "mean_family_mass": 0.2895384900547242,
+      "mean_target_mass": 0.28953273966908455,
+      "mean_target_log_odds": 10.6812508833281,
+      "correct_fraction": 1,
+      "mean_paired_log_odds_gain": 13.989840857108431,
+      "positive_paired_fraction": 1,
+      "greedy_target_bank_fraction": 0.25,
+      "passes": true
+    },
+    "fruit/template-1": {
+      "count": 8,
+      "mean_family_mass": 0.6396516974088797,
+      "mean_target_mass": 0.6396439969539642,
+      "mean_target_log_odds": 11.363668299842944,
+      "correct_fraction": 1,
+      "mean_paired_log_odds_gain": 13.346910202815993,
+      "positive_paired_fraction": 1,
+      "greedy_target_bank_fraction": 0.875,
+      "passes": true
+    },
+    "music/template-0": {
+      "count": 8,
+      "mean_family_mass": 0.23315048021526574,
+      "mean_target_mass": 0.23315003886818886,
+      "mean_target_log_odds": 13.365496853797081,
+      "correct_fraction": 1,
+      "mean_paired_log_odds_gain": 10.05690688001675,
+      "positive_paired_fraction": 1,
+      "greedy_target_bank_fraction": 0.25,
+      "passes": true
+    },
+    "music/template-1": {
+      "count": 8,
+      "mean_family_mass": 0.7985116126117566,
+      "mean_target_mass": 0.7985113486647606,
+      "mean_target_log_odds": 15.606977892313825,
+      "correct_fraction": 1,
+      "mean_paired_log_odds_gain": 13.623735989340778,
+      "positive_paired_fraction": 1,
+      "greedy_target_bank_fraction": 1,
+      "passes": true
+    }
+  },
+  "neutral": {
+    "0": {
+      "mean_fruit_minus_music_log_odds": -3.3085899737803306,
+      "mean_family_mass": 1.1891519604493098e-05
+    },
+    "1": {
+      "mean_fruit_minus_music_log_odds": -1.9832419029730484,
+      "mean_family_mass": 5.871116341893412e-05
+    }
+  },
+  "passes_readout_gates": true,
+  "forward_count": 48,
+  "intervention_count": 0,
+  "evaluation_run": false,
+  "decision": "Visible readout passed; any hidden-perturbation test requires a separate frozen protocol.",
+  "interpretation": "Lexical readout feasibility only; no self-monitoring or conscious-experience inference."
+}

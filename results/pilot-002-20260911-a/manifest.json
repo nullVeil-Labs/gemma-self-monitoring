@@ -1,0 +1,280 @@
+{
+  "run_id": "pilot-002-20260911-a",
+  "created_at": "2026-09-11T13:05:10.118401+00:00",
+  "protocol": {
+    "id": "pilot-002",
+    "status": "Frozen calibration diagnostic; no self-monitoring evaluation",
+    "seed": 20260911,
+    "question": "Do the candidate directions steer an undisplayed lexical readout, and does injection site matter?",
+    "scope": "Calibration only. Distinguishes a saturated forced choice from response-position and carrier-position effects. No self-monitoring claim.",
+    "module": "model.language_model.layers.22",
+    "indexing": "zero-based decoder block output",
+    "dtype": "bfloat16",
+    "strengths": [
+      0.05,
+      0.15,
+      0.3
+    ],
+    "strength_definition": "Per carrier token, add strength times its original residual L2 norm times a unit direction; compute delta in float32, cast to BF16.",
+    "injection_positions": "Only tokens overlapping the marked carrier sentence, never the subsequent question or answer position.",
+    "conditions": [
+      "sham",
+      "concept",
+      "random",
+      "negative"
+    ],
+    "concepts": [
+      {
+        "id": "fruit",
+        "split": "calibration",
+        "words": [
+          "apple",
+          "pear",
+          "peach",
+          "plum"
+        ],
+        "topic": "fruit",
+        "associate": "apple",
+        "foil": "violin",
+        "bank": "fruit",
+        "foil_bank": "music"
+      },
+      {
+        "id": "music",
+        "split": "calibration",
+        "words": [
+          "violin",
+          "piano",
+          "trumpet",
+          "flute"
+        ],
+        "topic": "music",
+        "associate": "violin",
+        "foil": "apple",
+        "bank": "music",
+        "foil_bank": "fruit"
+      }
+    ],
+    "neutral_words": [
+      "object",
+      "thing",
+      "item",
+      "material"
+    ],
+    "donor_template": "Consider the word: {word}",
+    "direction_definition": "Mean final donor-token block outputs minus mean neutral donor outputs, L2-normalized. Donors are raw completion text, not chat prompts.",
+    "random_definition": "One seeded Gaussian direction per concept, orthogonalized against its concept direction and L2-normalized.",
+    "carriers": [
+      {
+        "id": "c1",
+        "split": "calibration",
+        "sentence": "The lamp is beside the chair.",
+        "check": "Is the lamp beside the chair?",
+        "answer": true
+      },
+      {
+        "id": "c2",
+        "split": "calibration",
+        "sentence": "The key is inside the drawer.",
+        "check": "Is the key outside the drawer?",
+        "answer": false
+      }
+    ],
+    "calibration_tasks": [
+      "free_association",
+      "reading"
+    ],
+    "evaluation_tasks": [],
+    "label_mappings": [
+      0,
+      1
+    ],
+    "prompts": {
+      "prefix": "Read this sentence:\n<sentence>{sentence}</sentence>\n\n",
+      "detection": "An experimental change may or may not have been applied to your internal processing of that sentence. Was an unusual internal signal present that was unrelated to the visible sentence?",
+      "external": "Does the visible sentence explicitly mention {topic}?",
+      "association": "Choose a freely associated word after reading the sentence.",
+      "instruction": "\n{legend}\nRespond with exactly one letter, A or B, and nothing else."
+    },
+    "labels": {
+      "binary": [
+        "Yes",
+        "No"
+      ],
+      "token_spellings": {
+        "A": [
+          "A",
+          " A"
+        ],
+        "B": [
+          "B",
+          " B"
+        ]
+      }
+    },
+    "calibration_gate": {
+      "min_each_concept_mean_log_odds_gain": 0.5,
+      "min_each_concept_positive_cell_fraction": 0.75,
+      "min_reading_accuracy": 0.9,
+      "min_valid_reading_label_rate": 0.9,
+      "min_mean_reading_label_mass": 0.7,
+      "min_each_concept_mean_family_mass": 0.001,
+      "min_concept_minus_random_gain": 0.25,
+      "min_concept_minus_negative_gain": 0.25,
+      "selection": "Report each site separately. Lowest strength passing all gates is a candidate for a separately frozen next experiment, never automatic access to pilot-001 evaluation."
+    },
+    "scoring": "Free completion: sum full-vocabulary probabilities over predeclared single-token word-bank spellings and report target-minus-foil log odds, bank masses and greedy token. No displayed choices. Reading: unchanged first-token A/B scoring with reversed labels.",
+    "analysis": "Descriptive diagnostic. Pair each intervention with the same-prompt/site sham. Require both concepts to pass rather than averaging away opposite effects. Random/negative controls and visible semantic positive controls are reported. No inferential p-values or independence claims.",
+    "limits": "Direct response-position steering is an output-path diagnostic, not introspection. Word-bank readout is narrow; carrier/response positions differ intentionally. Previously used calibration material is reused; held-out self-monitoring material remains untouched.",
+    "reference": "Adapted feasibility design, not a replication: https://transformer-circuits.pub/2025/introspection/index.html",
+    "sites": [
+      "carrier",
+      "response"
+    ],
+    "free_templates": [
+      "A related word is",
+      "A possible association is"
+    ],
+    "word_banks": {
+      "fruit": [
+        "orange",
+        "banana",
+        "lemon",
+        "grape"
+      ],
+      "music": [
+        "guitar",
+        "drum",
+        "cello",
+        "harp"
+      ]
+    },
+    "visible_sentences": {
+      "fruit": "The basket contains ripe fruit.",
+      "music": "The orchestra performs instrumental music."
+    }
+  },
+  "protocol_sha256": "8a13fec3214b318f880da3a69e7e1d098a73d1429daf027336b94d55c2d0998e",
+  "runner_sha256": "e6e09fa8d21326153787c2689fa2ed01f9e77d9387d6a3c7e12dae33cb0be27d",
+  "resources": {
+    "status": "Runtime inventory checked; pilot-001 calibration completed and stopped at its preset gate.",
+    "model_directory": "<MODEL_DIR>",
+    "model_identity": "User-confirmed same checkpoint used in prior work",
+    "model_hash_policy": "skipped_at_user_request",
+    "candidate_python": "<RUNTIME_PROJECT>/.venv/Scripts/python.exe",
+    "previous_runtime_review": "<RUNTIME_PROJECT>/DEPENDENCY-VET.md",
+    "previous_runtime_inventory": "<RUNTIME_PROJECT>/runtime-vet.json",
+    "prior_numerical_validation": "<RUNTIME_PROJECT>/results/numerical-validation.json",
+    "runtime_review_must_be_refreshed_if_stale": true,
+    "self_monitoring_experiment_run": false,
+    "calibration_run": true,
+    "latest_run": "pilot-001-20260911-a"
+  },
+  "runtime_review": {
+    "approved": true,
+    "checked_at": "2026-09-11T11:35:44.363082+00:00",
+    "python_prefix": "<RUNTIME_PROJECT>\\.venv",
+    "runner_sha256": "600881469d271d87c7a0211f66763a34f30b4c80f569250deeb1e900c1a72040",
+    "protocol_sha256": "2b2ac9c98ae778835d8770d6a588df2c8afc02ff61ead900d6d5f10d6e614dc1",
+    "checkpoint_matches_corrected_v2": true,
+    "checkpoint_identity_evidence": "User explicitly confirmed this is the same V2 checkpoint and requested no model hashing on 2026-09-11.",
+    "model_hash_policy": "skipped_at_user_request",
+    "model_dir": "<MODEL_DIR>",
+    "model_files": {
+      "added_tokens.json": {
+        "size_bytes": 35
+      },
+      "chat_template.json": {
+        "size_bytes": 1615
+      },
+      "config.json": {
+        "size_bytes": 855
+      },
+      "generation_config.json": {
+        "size_bytes": 215
+      },
+      "model-00001-of-00002.safetensors": {
+        "size_bytes": 4961251752
+      },
+      "model-00002-of-00002.safetensors": {
+        "size_bytes": 3639026128
+      },
+      "model.safetensors.index.json": {
+        "size_bytes": 90558
+      },
+      "preprocessor_config.json": {
+        "size_bytes": 570
+      },
+      "processor_config.json": {
+        "size_bytes": 70
+      },
+      "put llm here.txt": {
+        "size_bytes": 124
+      },
+      "README.md": {
+        "size_bytes": 25122
+      },
+      "special_tokens_map.json": {
+        "size_bytes": 662
+      },
+      "tokenizer.json": {
+        "size_bytes": 33384568
+      },
+      "tokenizer.model": {
+        "size_bytes": 4689074
+      },
+      "tokenizer_config.json": {
+        "size_bytes": 1156999
+      }
+    },
+    "distributions": {
+      "annotated-doc": "0.0.5",
+      "anyio": "4.14.2",
+      "certifi": "2026.7.22",
+      "click": "8.5.0",
+      "colorama": "0.4.6",
+      "filelock": "3.32.4",
+      "fsspec": "2026.7.0",
+      "h11": "0.16.0",
+      "hf-xet": "1.6.0",
+      "httpcore": "1.0.9",
+      "httpx": "0.28.1",
+      "huggingface-hub": "1.29.0",
+      "idna": "3.19",
+      "jinja2": "3.1.6",
+      "markdown-it-py": "4.2.0",
+      "markupsafe": "3.0.3",
+      "mdurl": "0.1.2",
+      "mpmath": "1.3.0",
+      "networkx": "3.6.1",
+      "numpy": "2.5.2",
+      "packaging": "26.3",
+      "pygments": "2.21.0",
+      "pyyaml": "6.0.3",
+      "regex": "2026.7.19",
+      "rich": "15.0.0",
+      "safetensors": "0.8.0",
+      "setuptools": "84.0.0",
+      "shellingham": "1.5.4",
+      "sympy": "1.14.0",
+      "tokenizers": "0.23.1",
+      "torch": "2.13.0+cu130",
+      "tqdm": "4.70.0",
+      "transformers": "5.16.1",
+      "typer": "0.27.2",
+      "typing-extensions": "4.16.0"
+    },
+    "known_advisories": [],
+    "minimum_release_age_days": 14,
+    "package_integrity_verified": true,
+    "code_and_artifacts_reviewed": true,
+    "review_scope": {
+      "advisories": "PyPI and OSV exact versions, 35 distributions; CUDA Torch uses the reviewed 2.13.0 release.",
+      "artifacts": "34 PyPI archive SHA256 and embedded RECORD checks; 12097 existing Torch files verified against official CUDA wheel RECORD before copying.",
+      "provenance": "Official PyPI/PyTorch HTTPS sources; PyPI attestation metadata recorded where available, not cryptographically verified.",
+      "code": "Archive paths, Python startup files, Gemma built-in loader and experiment path reviewed; not an exhaustive source or native-binary audit.",
+      "antivirus": "Microsoft Defender custom scan completed 2026-09-11: no threats found.",
+      "limitations": "No guarantee of absence of unknown vulnerabilities or malicious code. Offline library flags are not an OS network sandbox."
+    }
+  }
+}

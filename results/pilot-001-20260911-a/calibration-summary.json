@@ -1,0 +1,85 @@
+{
+  "baseline": {
+    "valid_label_rate": 1,
+    "mean_label_mass": 0.9999999018272128,
+    "reading_accuracy": 1
+  },
+  "candidates": [
+    {
+      "strength": 0.05,
+      "valid_label_rate": 1,
+      "mean_label_mass": 0.9999999004695184,
+      "reading_accuracy": 1,
+      "association_probability_gain": -7.303747455456781e-06,
+      "passes": false
+    },
+    {
+      "strength": 0.15,
+      "valid_label_rate": 1,
+      "mean_label_mass": 0.9999999047176189,
+      "reading_accuracy": 1,
+      "association_probability_gain": 5.899337080490151e-06,
+      "passes": false
+    },
+    {
+      "strength": 0.3,
+      "valid_label_rate": 1,
+      "mean_label_mass": 0.9999999228877545,
+      "reading_accuracy": 1,
+      "association_probability_gain": 1.3860922960839327e-05,
+      "passes": false
+    }
+  ],
+  "controls": [
+    {
+      "strength": 0.05,
+      "condition": "random",
+      "valid_label_rate": 1,
+      "mean_label_mass": 0.9999998790583646,
+      "reading_accuracy": 1,
+      "association_probability_gain": -2.844914103902486e-06
+    },
+    {
+      "strength": 0.05,
+      "condition": "negative",
+      "valid_label_rate": 1,
+      "mean_label_mass": 0.9999998807773807,
+      "reading_accuracy": 1,
+      "association_probability_gain": -9.701089020579554e-07
+    },
+    {
+      "strength": 0.15,
+      "condition": "random",
+      "valid_label_rate": 1,
+      "mean_label_mass": 0.999999880313748,
+      "reading_accuracy": 1,
+      "association_probability_gain": -3.3149709676780853e-06
+    },
+    {
+      "strength": 0.15,
+      "condition": "negative",
+      "valid_label_rate": 1,
+      "mean_label_mass": 0.9999998777949521,
+      "reading_accuracy": 1,
+      "association_probability_gain": -6.253048193643086e-06
+    },
+    {
+      "strength": 0.3,
+      "condition": "random",
+      "valid_label_rate": 1,
+      "mean_label_mass": 0.9999998628950237,
+      "reading_accuracy": 1,
+      "association_probability_gain": -8.581189894712642e-06
+    },
+    {
+      "strength": 0.3,
+      "condition": "negative",
+      "valid_label_rate": 1,
+      "mean_label_mass": 0.9999998829506502,
+      "reading_accuracy": 1,
+      "association_probability_gain": 1.5852773183476816e-06
+    }
+  ],
+  "selected_strength": null,
+  "decision": "Stop: calibration did not establish a usable, format-preserving perturbation."
+}

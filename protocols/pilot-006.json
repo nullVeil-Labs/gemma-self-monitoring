@@ -1,0 +1,298 @@
+{
+  "seed": 20260911,
+  "module": "model.language_model.layers.22",
+  "indexing": "zero-based decoder block output",
+  "dtype": "bfloat16",
+  "strength_definition": "Per carrier token, add strength times its original residual L2 norm times a unit direction; compute delta in float32, cast to BF16.",
+  "injection_positions": "Only tokens overlapping the marked carrier sentence, never the subsequent question or answer position.",
+  "conditions": [
+    "sham",
+    "concept",
+    "random",
+    "negative"
+  ],
+  "concepts": [
+    {
+      "id": "fruit",
+      "split": "calibration",
+      "words": [
+        "apple",
+        "pear",
+        "peach",
+        "plum"
+      ],
+      "topic": "fruit",
+      "associate": "apple",
+      "foil": "violin",
+      "bank": "fruit",
+      "foil_bank": "music"
+    },
+    {
+      "id": "music",
+      "split": "calibration",
+      "words": [
+        "violin",
+        "piano",
+        "trumpet",
+        "flute"
+      ],
+      "topic": "music",
+      "associate": "violin",
+      "foil": "apple",
+      "bank": "music",
+      "foil_bank": "fruit"
+    }
+  ],
+  "neutral_words": [
+    "object",
+    "thing",
+    "item",
+    "material"
+  ],
+  "donor_template": "Consider the word: {word}",
+  "direction_definition": "Mean final donor-token block outputs minus mean neutral donor outputs, L2-normalized. Donors are raw completion text, not chat prompts.",
+  "random_definition": "One seeded Gaussian direction per concept, orthogonalized against its concept direction and L2-normalized.",
+  "prompts": {
+    "prefix": "Read this sentence:\n<sentence>{sentence}</sentence>\n\n",
+    "detection": "An experimental change may or may not have been applied to your internal processing of that sentence. Was an unusual internal signal present that was unrelated to the visible sentence?",
+    "external": "Does the sentence between the markers explicitly mention {topic}?",
+    "association": "Choose a freely associated word after reading the sentence.",
+    "instruction": "\n{legend}\nRespond with exactly one letter, A or B, and nothing else.",
+    "absence": "Was your processing of the sentence free from any unusual internal influence unrelated to the visible sentence?"
+  },
+  "labels": {
+    "binary": [
+      "Yes",
+      "No"
+    ],
+    "token_spellings": {
+      "A": [
+        "A",
+        " A"
+      ],
+      "B": [
+        "B",
+        " B"
+      ]
+    }
+  },
+  "calibration_gate": {
+    "min_each_concept_mean_log_odds_gain": 0.5,
+    "min_each_concept_positive_cell_fraction": 0.75,
+    "min_reading_accuracy": 0.9,
+    "min_valid_reading_label_rate": 0.9,
+    "min_mean_reading_label_mass": 0.7,
+    "min_each_concept_mean_family_mass": 0.001,
+    "min_concept_minus_random_gain": 0.25,
+    "min_concept_minus_negative_gain": 0.25,
+    "selection": "The only strength is 0.05. Every concept/template and all condition-specific reading gates must pass chat transfer before detection evaluation. No strength adjustment.",
+    "min_each_concept_template_target_mass_gain": 0.001
+  },
+  "word_banks": {
+    "fruit": [
+      "fruit",
+      "fruits",
+      "orange",
+      "oranges",
+      "banana",
+      "bananas",
+      "lemon",
+      "lemons",
+      "grape",
+      "grapes",
+      "berry",
+      "berries",
+      "cherry",
+      "cherries",
+      "mango",
+      "melon",
+      "citrus",
+      "coconut",
+      "pineapple",
+      "strawberry"
+    ],
+    "music": [
+      "music",
+      "musical",
+      "instrument",
+      "instruments",
+      "song",
+      "songs",
+      "melody",
+      "rhythm",
+      "harmony",
+      "concert",
+      "orchestra",
+      "band",
+      "guitar",
+      "drum",
+      "cello",
+      "harp",
+      "singer",
+      "singing",
+      "tune",
+      "notes"
+    ]
+  },
+  "visible_sentences": {
+    "fruit": "The scene featured sliced produce with sweet flesh and seeds.",
+    "music": "The scene featured performers keeping time through a sequence of pitches."
+  },
+  "preflight": {
+    "order": "Run four visible controls first; require both concepts to pass before perturbation trials.",
+    "min_mean_family_mass": 0.001,
+    "min_mean_log_odds": 0.0,
+    "strict_greater_log_odds": true
+  },
+  "readout_reference": {
+    "protocol": "pilot-004",
+    "sha256": "33b5b0542d74e4ec44687fadcd4ac63c98113451e0a7356393e551ba8b6fffd0",
+    "run": "pilot-004-20260911-a"
+  },
+  "id": "pilot-006",
+  "status": "Frozen chat-format transfer preflight and detection evaluation",
+  "question": "Can the model distinguish a hidden calibrated carrier-position perturbation from sham in its first report token, consistently across opposite question polarity and reversed labels?",
+  "scope": "One bounded protocol: 12 donor forwards, 132 chat-format calibration forwards; only on passing, 648 evaluation forwards and 4 repeated shams. Maximum 796 forwards. No generated association is shown before detection.",
+  "strengths": [
+    0.05
+  ],
+  "strengths_by_site": {
+    "carrier": [
+      0.05
+    ]
+  },
+  "sites": [
+    "carrier"
+  ],
+  "free_templates": [
+    "Give one word related to the sentence. Respond with one quoted word.",
+    "Give one possible association with the sentence. Respond with one quoted word."
+  ],
+  "association_format": "Chat user prompt followed by assistant generation prefix and a fixed opening quotation mark. This changes pilot-004 raw completion framing; chat transfer must pass calibration before evaluation.",
+  "calibration_tasks": [
+    "free_association",
+    "reading"
+  ],
+  "evaluation_tasks": [
+    "detection",
+    "absence",
+    "external",
+    "reading",
+    "free_association"
+  ],
+  "label_mappings": [
+    0,
+    1
+  ],
+  "detection_gate": {
+    "min_each_hit_rate": 0.75,
+    "max_each_sham_false_positive_rate": 0.25,
+    "min_each_oriented_probability_gain": 0.1,
+    "max_each_external_false_positive_rate": 0.25,
+    "max_each_external_probability_gain": 0.05,
+    "min_visible_external_accuracy": 0.75,
+    "min_valid_label_rate": 0.9,
+    "min_mean_label_mass": 0.7,
+    "min_reading_accuracy": 0.9
+  },
+  "analysis": "Descriptive pilot. Require every concept/question-polarity/label-mapping subgroup separately. Invalid labels fail hit and sham-specificity gates, never count as correct negatives. Random and negative directions are real interventions, not negative ground truth; report their detection rates without requiring silence. Require held-out association transfer and reading/external controls. No p-values or independent-replication claims.",
+  "limits": "Eight hand-authored evaluation carriers; concepts, donor words and layer were selected during prior calibration. Chat association and detection tasks still have different suffixes. Passing would be a candidate functional effect, not consciousness or a circuit. Task-dependent direct answer steering remains possible even after polarity/label controls.",
+  "selection_reference": {
+    "protocol": "pilot-005",
+    "sha256": "55fe606b68e9976d43147f0e9f45dc2da48e60541c60ef67256a80be5c8143d5",
+    "run": "pilot-005-20260911-a",
+    "selected_strength": 0.05
+  },
+  "restoration_check": "After evaluation repeat four shams: first evaluation carrier, each concept, free-association template 0 and reading mapping 0. Require exact saved-row equality; otherwise record failure and stop.",
+  "carriers": [
+    {
+      "id": "d01",
+      "split": "calibration",
+      "sentence": "The wallet is under the cushion.",
+      "check": "Is the wallet under the cushion?",
+      "answer": true
+    },
+    {
+      "id": "d02",
+      "split": "calibration",
+      "sentence": "The scarf is beside the mirror.",
+      "check": "Is the scarf inside the mirror?",
+      "answer": false
+    },
+    {
+      "id": "d03",
+      "split": "calibration",
+      "sentence": "The ruler is inside the pouch.",
+      "check": "Is the ruler inside the pouch?",
+      "answer": true
+    },
+    {
+      "id": "d04",
+      "split": "calibration",
+      "sentence": "The towel is above the sink.",
+      "check": "Is the towel below the sink?",
+      "answer": false
+    },
+    {
+      "id": "d05",
+      "split": "evaluation",
+      "sentence": "The stamp is inside the tin.",
+      "check": "Is the stamp inside the tin?",
+      "answer": true
+    },
+    {
+      "id": "d06",
+      "split": "evaluation",
+      "sentence": "The folder is beneath the calendar.",
+      "check": "Is the folder above the calendar?",
+      "answer": false
+    },
+    {
+      "id": "d07",
+      "split": "evaluation",
+      "sentence": "The glove is beside the helmet.",
+      "check": "Is the glove beside the helmet?",
+      "answer": true
+    },
+    {
+      "id": "d08",
+      "split": "evaluation",
+      "sentence": "The slipper is under the bed.",
+      "check": "Is the slipper on the bed?",
+      "answer": false
+    },
+    {
+      "id": "d09",
+      "split": "evaluation",
+      "sentence": "The bottle is behind the crate.",
+      "check": "Is the bottle behind the crate?",
+      "answer": true
+    },
+    {
+      "id": "d10",
+      "split": "evaluation",
+      "sentence": "The brush is on the counter.",
+      "check": "Is the brush beneath the counter?",
+      "answer": false
+    },
+    {
+      "id": "d11",
+      "split": "evaluation",
+      "sentence": "The parcel is inside the locker.",
+      "check": "Is the parcel inside the locker?",
+      "answer": true
+    },
+    {
+      "id": "d12",
+      "split": "evaluation",
+      "sentence": "The rug is beside the chest.",
+      "check": "Is the rug inside the chest?",
+      "answer": false
+    }
+  ],
+  "visible_external_sentences": {
+    "fruit": "The note explicitly mentions fruit.",
+    "music": "The note explicitly mentions music."
+  },
+  "visible_external_count_note": "Two concepts times two label mappings times two sentences: explicit mention (Yes) and first neutral evaluation carrier (No), eight unmodified controls."
+}

@@ -1,0 +1,9 @@
+{
+  "_note": "Machine-specific paths were redacted for publication on 2026-11-09; fill in local values to rerun.",
+  "model_directory": "<MODEL_DIR>",
+  "model_identity": "User-confirmed same checkpoint used in prior work",
+  "model_hash_policy": "skipped_at_user_request",
+  "candidate_python": "<RUNTIME_PROJECT>/.venv/Scripts/python.exe",
+  "previous_runtime_review": "<RUNTIME_PROJECT>/DEPENDENCY-VET.md",
+  "previous_runtime_inventory": "<RUNTIME_PROJECT>/runtime-vet.json"
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "word": "object",
+    "text": "Consider the word: object",
+    "token_ids": [
+      2,
+      24501,
+      506,
+      3658,
+      236787,
+      2495
+    ]
+  },
+  {
+    "word": "thing",
+    "text": "Consider the word: thing",
+    "token_ids": [
+      2,
+      24501,
+      506,
+      3658,
+      236787,
+      3210
+    ]
+  },
+  {
+    "word": "item",
+    "text": "Consider the word: item",
+    "token_ids": [
+      2,
+      24501,
+      506,
+      3658,
+      236787,
+      4188
+    ]
+  },
+  {
+    "word": "material",
+    "text": "Consider the word: material",
+    "token_ids": [
+      2,
+      24501,
+      506,
+      3658,
+      236787,
+      2561
+    ]
+  },
+  {
+    "word": "apple",
+    "text": "Consider the word: apple",
+    "token_ids": [
+      2,
+      24501,
+      506,
+      3658,
+      236787,
+      17810
+    ]
+  },
+  {
+    "word": "pear",
+    "text": "Consider the word: pear",
+    "token_ids": [
+      2,
+      24501,
+      506,
+      3658,
+      236787,
+      24200
+    ]
+  },
+  {
+    "word": "peach",
+    "text": "Consider the word: peach",
+    "token_ids": [
+      2,
+      24501,
+      506,
+      3658,
+      236787,
+      58732
+    ]
+  },
+  {
+    "word": "plum",
+    "text": "Consider the word: plum",
+    "token_ids": [
+      2,
+      24501,
+      506,
+      3658,
+      236787,
+      39356
+    ]
+  },
+  {
+    "word": "violin",
+    "text": "Consider the word: violin",
+    "token_ids": [
+      2,
+      24501,
+      506,
+      3658,
+      236787,
+      47402
+    ]
+  },
+  {
+    "word": "piano",
+    "text": "Consider the word: piano",
+    "token_ids": [
+      2,
+      24501,
+      506,
+      3658,
+      236787,
+      20392
+    ]
+  },
+  {
+    "word": "trumpet",
+    "text": "Consider the word: trumpet",
+    "token_ids": [
+      2,
+      24501,
+      506,
+      3658,
+      236787,
+      67748
+    ]
+  },
+  {
+    "word": "flute",
+    "text": "Consider the word: flute",
+    "token_ids": [
+      2,
+      24501,
+      506,
+      3658,
+      236787,
+      87712
+    ]
+  }
+]

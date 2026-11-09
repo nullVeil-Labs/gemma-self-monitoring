@@ -1,0 +1,8 @@
+{
+  "status": "stopped_at_readout_preflight",
+  "evaluation_run": false,
+  "selected_by_site": {
+    "carrier": null,
+    "response": null
+  }
+}

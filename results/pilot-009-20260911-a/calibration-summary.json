@@ -1,0 +1,186 @@
+{
+  "cells": [
+    {
+      "carrier": "w1",
+      "concept": "fruit",
+      "template": 0,
+      "family_mass": 0.0042617144326677035,
+      "target_log_odds": 35.69732092409075,
+      "paired_log_odds_gain": 37.27819126651789,
+      "passes": true,
+      "failed_gates": []
+    },
+    {
+      "carrier": "w1",
+      "concept": "fruit",
+      "template": 1,
+      "family_mass": 0.12886120675138465,
+      "target_log_odds": 29.974116479196198,
+      "paired_log_odds_gain": 37.5587383354589,
+      "passes": true,
+      "failed_gates": []
+    },
+    {
+      "carrier": "w1",
+      "concept": "music",
+      "template": 0,
+      "family_mass": 0.0813482267955818,
+      "target_log_odds": 51.24299412124506,
+      "paired_log_odds_gain": 49.66212377881792,
+      "passes": true,
+      "failed_gates": []
+    },
+    {
+      "carrier": "w1",
+      "concept": "music",
+      "template": 1,
+      "family_mass": 0.9998421283264767,
+      "target_log_odds": 41.52649914465637,
+      "paired_log_odds_gain": 33.94187728839367,
+      "passes": true,
+      "failed_gates": []
+    },
+    {
+      "carrier": "w2",
+      "concept": "fruit",
+      "template": 0,
+      "family_mass": 1.4666123622312742e-12,
+      "target_log_odds": 23.156144386166144,
+      "paired_log_odds_gain": 21.817297478677897,
+      "passes": false,
+      "failed_gates": [
+        "family_mass"
+      ]
+    },
+    {
+      "carrier": "w2",
+      "concept": "fruit",
+      "template": 1,
+      "family_mass": 1.5614016669395052e-08,
+      "target_log_odds": 13.653237393867759,
+      "paired_log_odds_gain": 13.01418297726143,
+      "passes": false,
+      "failed_gates": [
+        "family_mass"
+      ]
+    },
+    {
+      "carrier": "w2",
+      "concept": "music",
+      "template": 0,
+      "family_mass": 5.6608392139049846e-15,
+      "target_log_odds": 26.7438845334312,
+      "paired_log_odds_gain": 28.082731440919446,
+      "passes": false,
+      "failed_gates": [
+        "family_mass"
+      ]
+    },
+    {
+      "carrier": "w2",
+      "concept": "music",
+      "template": 1,
+      "family_mass": 0.9992806349321082,
+      "target_log_odds": 39.65159585393061,
+      "paired_log_odds_gain": 40.290650270536936,
+      "passes": true,
+      "failed_gates": []
+    },
+    {
+      "carrier": "w3",
+      "concept": "fruit",
+      "template": 0,
+      "family_mass": 5.985442748751709e-10,
+      "target_log_odds": 19.257873098146522,
+      "paired_log_odds_gain": 22.244420251120314,
+      "passes": false,
+      "failed_gates": [
+        "family_mass"
+      ]
+    },
+    {
+      "carrier": "w3",
+      "concept": "fruit",
+      "template": 1,
+      "family_mass": 0.006626131487019144,
+      "target_log_odds": 29.750165082770057,
+      "paired_log_odds_gain": 37.213601296407504,
+      "passes": true,
+      "failed_gates": []
+    },
+    {
+      "carrier": "w3",
+      "concept": "music",
+      "template": 0,
+      "family_mass": 0.9999999610344832,
+      "target_log_odds": 62.691389781069574,
+      "paired_log_odds_gain": 59.70484262809578,
+      "passes": true,
+      "failed_gates": []
+    },
+    {
+      "carrier": "w3",
+      "concept": "music",
+      "template": 1,
+      "family_mass": 0.9990492093631884,
+      "target_log_odds": 38.435015959295946,
+      "paired_log_odds_gain": 30.9715797456585,
+      "passes": true,
+      "failed_gates": []
+    },
+    {
+      "carrier": "w4",
+      "concept": "fruit",
+      "template": 0,
+      "family_mass": 1.521438158539487e-08,
+      "target_log_odds": 21.7503205719511,
+      "paired_log_odds_gain": 37.358962742562944,
+      "passes": false,
+      "failed_gates": [
+        "family_mass"
+      ]
+    },
+    {
+      "carrier": "w4",
+      "concept": "fruit",
+      "template": 1,
+      "family_mass": 0.0004276090584464192,
+      "target_log_odds": 13.81256960458957,
+      "paired_log_odds_gain": 25.231836119509417,
+      "passes": false,
+      "failed_gates": [
+        "family_mass"
+      ]
+    },
+    {
+      "carrier": "w4",
+      "concept": "music",
+      "template": 0,
+      "family_mass": 0.6225381461912138,
+      "target_log_odds": 57.82524615974759,
+      "paired_log_odds_gain": 42.21660398913575,
+      "passes": true,
+      "failed_gates": []
+    },
+    {
+      "carrier": "w4",
+      "concept": "music",
+      "template": 1,
+      "family_mass": 0.9999999730016654,
+      "target_log_odds": 52.45011825978356,
+      "paired_log_odds_gain": 41.03085174486371,
+      "passes": true,
+      "failed_gates": []
+    }
+  ],
+  "passing_cells": 10,
+  "total_category_cells": 16,
+  "passes_readout_gates": false,
+  "contexts": 24,
+  "model_forward_calls": 8424,
+  "prefix_sequences_scored": 8400,
+  "serial_check_max_log_probability_difference": 0.0,
+  "evaluation_run": false,
+  "intervention_count": 0,
+  "interpretation": "Visible complete-word likelihood validation only; no self-monitoring or consciousness inference."
+}

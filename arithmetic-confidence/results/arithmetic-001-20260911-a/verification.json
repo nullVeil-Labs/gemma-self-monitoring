@@ -1,0 +1,14 @@
+{
+  "archive_original_files_preserved": 137,
+  "archive_original_bytes": 7093269,
+  "original_readme_preserved_as": "ARCHIVE-INDEX.md",
+  "protocol_and_source_snapshots_match": true,
+  "runtime_guard_ast_matches_archive": true,
+  "raw_questions_verified": 96,
+  "independent_integer_regrading_matches": true,
+  "confidence_mapping_reconstruction_matches": true,
+  "summaries_reproduce_exactly": true,
+  "forward_calls": 920,
+  "model_hashes_computed": false,
+  "unit_tests_passed": 10
+}

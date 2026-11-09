@@ -1,0 +1,15 @@
+Data and documentation licence
+
+Copyright (c) 2026 nullVeil Labs
+
+The source code in this repository is licensed under the MIT License (see
+LICENSE). The reports, protocols and result data in this repository (including
+reports/, protocols/, results/, arithmetic-confidence/reports/,
+arithmetic-confidence/protocol.json, arithmetic-confidence/results/ and the
+Markdown documentation) are licensed under the Creative Commons Attribution 4.0
+International licence (CC BY 4.0):
+
+https://creativecommons.org/licenses/by/4.0/
+
+Model generations by Gemma contained in the result data are additionally
+subject to the Gemma Terms of Use: https://ai.google.dev/gemma/terms

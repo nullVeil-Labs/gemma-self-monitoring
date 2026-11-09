@@ -1,0 +1,13 @@
+{
+  "tests_passed": 11,
+  "analysis_matches_saved_summary": true,
+  "evaluation_artifacts_present": false,
+  "association_greedy_choices": {
+    "apple": 80
+  },
+  "actual_norm_ratios": {
+    "0.05": 0.04982475284487009,
+    "0.15": 0.1500418856739998,
+    "0.3": 0.30006852746009827
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "tests_passed": 37,
+  "protocol_and_source_match": true,
+  "saved_reanalysis_matches": true,
+  "raw_calibration_rows": 324,
+  "donor_forwards": 12,
+  "repeated_sham_forwards": 4,
+  "total_forwards": 340,
+  "intervention_forwards": 288,
+  "repeated_shams_exact": true,
+  "visible_scores_exactly_match_pilot004": true,
+  "matched_prompt_token_ids_and_positions": true,
+  "directions_unit_and_random_orthogonal": true,
+  "max_norm_ratio_error": 0.00024750754237175265,
+  "max_log_odds_error_vs_saved_masses": 1.4088250699373361e-06,
+  "reading_correct": 160,
+  "evaluation_run": false,
+  "model_hashing": "skipped_at_user_request"
+}

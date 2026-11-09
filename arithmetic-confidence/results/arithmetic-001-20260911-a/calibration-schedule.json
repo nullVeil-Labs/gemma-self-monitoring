@@ -1,0 +1,322 @@
+[
+  {
+    "id": "calibration-multiply4-03",
+    "split": "calibration",
+    "stratum": "multiply4",
+    "a": 1270,
+    "b": 6674,
+    "operation": "*",
+    "expression": "1270 * 6674",
+    "expected": 8475980
+  },
+  {
+    "id": "calibration-multiply2-04",
+    "split": "calibration",
+    "stratum": "multiply2",
+    "a": 85,
+    "b": 78,
+    "operation": "*",
+    "expression": "85 * 78",
+    "expected": 6630
+  },
+  {
+    "id": "calibration-multiply3-04",
+    "split": "calibration",
+    "stratum": "multiply3",
+    "a": 878,
+    "b": 262,
+    "operation": "*",
+    "expression": "878 * 262",
+    "expected": 230036
+  },
+  {
+    "id": "calibration-multiply2-05",
+    "split": "calibration",
+    "stratum": "multiply2",
+    "a": 93,
+    "b": 74,
+    "operation": "*",
+    "expression": "93 * 74",
+    "expected": 6882
+  },
+  {
+    "id": "calibration-multiply4-08",
+    "split": "calibration",
+    "stratum": "multiply4",
+    "a": 6908,
+    "b": 5185,
+    "operation": "*",
+    "expression": "6908 * 5185",
+    "expected": 35817980
+  },
+  {
+    "id": "calibration-multiply4-07",
+    "split": "calibration",
+    "stratum": "multiply4",
+    "a": 4006,
+    "b": 2791,
+    "operation": "*",
+    "expression": "4006 * 2791",
+    "expected": 11180746
+  },
+  {
+    "id": "calibration-add3-04",
+    "split": "calibration",
+    "stratum": "add3",
+    "a": 778,
+    "b": 277,
+    "operation": "+",
+    "expression": "778 + 277",
+    "expected": 1055
+  },
+  {
+    "id": "calibration-multiply4-02",
+    "split": "calibration",
+    "stratum": "multiply4",
+    "a": 3906,
+    "b": 4026,
+    "operation": "*",
+    "expression": "3906 * 4026",
+    "expected": 15725556
+  },
+  {
+    "id": "calibration-add3-08",
+    "split": "calibration",
+    "stratum": "add3",
+    "a": 239,
+    "b": 682,
+    "operation": "+",
+    "expression": "239 + 682",
+    "expected": 921
+  },
+  {
+    "id": "calibration-multiply3-07",
+    "split": "calibration",
+    "stratum": "multiply3",
+    "a": 488,
+    "b": 125,
+    "operation": "*",
+    "expression": "488 * 125",
+    "expected": 61000
+  },
+  {
+    "id": "calibration-multiply3-02",
+    "split": "calibration",
+    "stratum": "multiply3",
+    "a": 525,
+    "b": 871,
+    "operation": "*",
+    "expression": "525 * 871",
+    "expected": 457275
+  },
+  {
+    "id": "calibration-multiply2-02",
+    "split": "calibration",
+    "stratum": "multiply2",
+    "a": 21,
+    "b": 65,
+    "operation": "*",
+    "expression": "21 * 65",
+    "expected": 1365
+  },
+  {
+    "id": "calibration-add3-02",
+    "split": "calibration",
+    "stratum": "add3",
+    "a": 470,
+    "b": 115,
+    "operation": "+",
+    "expression": "470 + 115",
+    "expected": 585
+  },
+  {
+    "id": "calibration-multiply4-06",
+    "split": "calibration",
+    "stratum": "multiply4",
+    "a": 9876,
+    "b": 8729,
+    "operation": "*",
+    "expression": "9876 * 8729",
+    "expected": 86207604
+  },
+  {
+    "id": "calibration-add3-07",
+    "split": "calibration",
+    "stratum": "add3",
+    "a": 600,
+    "b": 358,
+    "operation": "+",
+    "expression": "600 + 358",
+    "expected": 958
+  },
+  {
+    "id": "calibration-multiply4-04",
+    "split": "calibration",
+    "stratum": "multiply4",
+    "a": 2047,
+    "b": 4481,
+    "operation": "*",
+    "expression": "2047 * 4481",
+    "expected": 9172607
+  },
+  {
+    "id": "calibration-multiply4-01",
+    "split": "calibration",
+    "stratum": "multiply4",
+    "a": 1909,
+    "b": 4862,
+    "operation": "*",
+    "expression": "1909 * 4862",
+    "expected": 9281558
+  },
+  {
+    "id": "calibration-multiply3-05",
+    "split": "calibration",
+    "stratum": "multiply3",
+    "a": 530,
+    "b": 241,
+    "operation": "*",
+    "expression": "530 * 241",
+    "expected": 127730
+  },
+  {
+    "id": "calibration-multiply3-03",
+    "split": "calibration",
+    "stratum": "multiply3",
+    "a": 745,
+    "b": 922,
+    "operation": "*",
+    "expression": "745 * 922",
+    "expected": 686890
+  },
+  {
+    "id": "calibration-add3-05",
+    "split": "calibration",
+    "stratum": "add3",
+    "a": 616,
+    "b": 938,
+    "operation": "+",
+    "expression": "616 + 938",
+    "expected": 1554
+  },
+  {
+    "id": "calibration-multiply2-01",
+    "split": "calibration",
+    "stratum": "multiply2",
+    "a": 44,
+    "b": 74,
+    "operation": "*",
+    "expression": "44 * 74",
+    "expected": 3256
+  },
+  {
+    "id": "calibration-multiply2-08",
+    "split": "calibration",
+    "stratum": "multiply2",
+    "a": 87,
+    "b": 50,
+    "operation": "*",
+    "expression": "87 * 50",
+    "expected": 4350
+  },
+  {
+    "id": "calibration-multiply2-03",
+    "split": "calibration",
+    "stratum": "multiply2",
+    "a": 58,
+    "b": 25,
+    "operation": "*",
+    "expression": "58 * 25",
+    "expected": 1450
+  },
+  {
+    "id": "calibration-multiply2-06",
+    "split": "calibration",
+    "stratum": "multiply2",
+    "a": 72,
+    "b": 97,
+    "operation": "*",
+    "expression": "72 * 97",
+    "expected": 6984
+  },
+  {
+    "id": "calibration-multiply3-01",
+    "split": "calibration",
+    "stratum": "multiply3",
+    "a": 567,
+    "b": 159,
+    "operation": "*",
+    "expression": "567 * 159",
+    "expected": 90153
+  },
+  {
+    "id": "calibration-add3-06",
+    "split": "calibration",
+    "stratum": "add3",
+    "a": 519,
+    "b": 430,
+    "operation": "+",
+    "expression": "519 + 430",
+    "expected": 949
+  },
+  {
+    "id": "calibration-multiply3-06",
+    "split": "calibration",
+    "stratum": "multiply3",
+    "a": 978,
+    "b": 696,
+    "operation": "*",
+    "expression": "978 * 696",
+    "expected": 680688
+  },
+  {
+    "id": "calibration-add3-03",
+    "split": "calibration",
+    "stratum": "add3",
+    "a": 559,
+    "b": 193,
+    "operation": "+",
+    "expression": "559 + 193",
+    "expected": 752
+  },
+  {
+    "id": "calibration-multiply4-05",
+    "split": "calibration",
+    "stratum": "multiply4",
+    "a": 8852,
+    "b": 4054,
+    "operation": "*",
+    "expression": "8852 * 4054",
+    "expected": 35886008
+  },
+  {
+    "id": "calibration-multiply2-07",
+    "split": "calibration",
+    "stratum": "multiply2",
+    "a": 89,
+    "b": 80,
+    "operation": "*",
+    "expression": "89 * 80",
+    "expected": 7120
+  },
+  {
+    "id": "calibration-add3-01",
+    "split": "calibration",
+    "stratum": "add3",
+    "a": 928,
+    "b": 718,
+    "operation": "+",
+    "expression": "928 + 718",
+    "expected": 1646
+  },
+  {
+    "id": "calibration-multiply3-08",
+    "split": "calibration",
+    "stratum": "multiply3",
+    "a": 386,
+    "b": 781,
+    "operation": "*",
+    "expression": "386 * 781",
+    "expected": 301466
+  }
+]

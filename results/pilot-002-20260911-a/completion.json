@@ -1,0 +1,8 @@
+{
+  "status": "calibration_diagnostic_complete",
+  "evaluation_run": false,
+  "selected_by_site": {
+    "carrier": null,
+    "response": null
+  }
+}

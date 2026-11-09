@@ -1,0 +1,26 @@
+{
+  "questions": 32,
+  "correct": 15,
+  "incorrect": 17,
+  "valid_integer_answers": 30,
+  "mapping_quality": {
+    "0": {
+      "valid_rate": 1,
+      "mean_label_mass": 0.999999962845834
+    },
+    "1": {
+      "valid_rate": 1,
+      "mean_label_mass": 0.9999998599889466
+    }
+  },
+  "mean_mapping_difference": 2.963812979000016e-05,
+  "format_passes": true,
+  "baseline_by_stratum": {
+    "add3": 0.9,
+    "multiply2": 0.7,
+    "multiply3": 0.2,
+    "multiply4": 0.1
+  },
+  "global_baseline": 0.47058823529411764,
+  "passes": true
+}

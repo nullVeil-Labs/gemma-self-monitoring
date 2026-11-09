@@ -1,0 +1,110 @@
+{
+  "id": "pilot-009",
+  "status": "Frozen serial complete-word correction after numerical abort",
+  "seed": 20260911,
+  "dtype": "bfloat16",
+  "question": "Does complete quoted-word probability provide a usable chat readout on every fresh visible-control cell?",
+  "scope": "24 visible contexts: four fresh fruit/music/neutral triplets under two unchanged chat wordings. Score fixed candidate continuations without sampling, training, donors, hooks or detection evaluation.",
+  "conditions": [
+    "visible"
+  ],
+  "evaluation_tasks": [],
+  "prefix": "Read this sentence:\n<sentence>{sentence}</sentence>\n\n",
+  "free_templates": [
+    "Give one word related to the sentence. Respond with one quoted word.",
+    "Give one possible association with the sentence. Respond with one quoted word."
+  ],
+  "word_banks": {
+    "fruit": [
+      "fruit",
+      "fruits",
+      "orange",
+      "oranges",
+      "banana",
+      "bananas",
+      "lemon",
+      "lemons",
+      "grape",
+      "grapes",
+      "berry",
+      "berries",
+      "cherry",
+      "cherries",
+      "mango",
+      "melon",
+      "citrus",
+      "coconut",
+      "pineapple",
+      "strawberry"
+    ],
+    "music": [
+      "music",
+      "musical",
+      "instrument",
+      "instruments",
+      "song",
+      "songs",
+      "melody",
+      "rhythm",
+      "harmony",
+      "concert",
+      "orchestra",
+      "band",
+      "guitar",
+      "drum",
+      "cello",
+      "harp",
+      "singer",
+      "singing",
+      "tune",
+      "notes"
+    ]
+  },
+  "reference": {
+    "protocol": "pilot-008",
+    "sha256": "16dadfc81ef5d8b22689313fd2311daaa6bcd513595fdb6c7e7f1290a8ee0886"
+  },
+  "candidate_policy": "For each unchanged bank word, lowercase, initial-capital and uppercase; bare and one leading space; include closing quotation mark. Encode in full rendered context and require unchanged prefix tokenization. Deduplicate complete token sequences; no sequence may be a prefix of another. Preserve all subword tokens. No first-token truncation or length normalization.",
+  "scoring": "Sum conditional log probabilities along each complete candidate token path, including closing quote. Sum disjoint candidate probabilities by bank using logsumexp. Report natural-log fruit/music ratio, full bank masses, and difference from the paired neutral score. This is likelihood scoring, not generated-answer accuracy and not KL.",
+  "execution": "Score every unique nonterminal candidate prefix individually with no batching, padding, KV cache, activation hooks or weight updates. Only last-position logits are requested.",
+  "batch_size": 1,
+  "max_suffix_tokens": 12,
+  "max_prefix_nodes_per_context": 1200,
+  "max_forward_calls": 9000,
+  "serial_check": "Repeat the first non-root prefix in each context and compare required child log probabilities. Preserve the 0.25-nat tolerance; record differences. This checks serial repeatability rather than batched equivalence.",
+  "max_serial_log_probability_difference": 0.25,
+  "gate": {
+    "min_each_cell_family_mass": 0.001,
+    "min_each_cell_target_log_odds": 0.0,
+    "min_each_cell_paired_log_odds_gain": 1.0
+  },
+  "decision": "Every one of the 16 fruit/music control cells must pass all three gates. Do not average away failed carriers or drop a wording. Neutral contexts are paired baselines. Stop after scoring; no perturbation or detection stage follows automatically.",
+  "limits": "Same vocabulary chosen after earlier pilots, hand-authored visible controls, two repeated wordings and one checkpoint. Complete token paths address segmentation, not all semantic vocabulary coverage. Closing-quote likelihood changes the metric relative to earlier first-token scores. No p-values, consciousness or circuit claims.",
+  "controls": [
+    {
+      "id": "w1",
+      "fruit": "Freshly squeezed juice came from sweet round produce with a peel.",
+      "music": "The audience listened as a soloist played a sequence of harmonized pitches.",
+      "neutral": "The resident placed a spare towel on a bathroom rack."
+    },
+    {
+      "id": "w2",
+      "fruit": "At the stall, seeded sweet produce was weighed for a snack.",
+      "music": "During practice, the ensemble repeated a passage at a slower tempo.",
+      "neutral": "At the entrance, a delivery box rested on the doormat."
+    },
+    {
+      "id": "w3",
+      "fruit": "After harvesting, the sweet fleshy crop was cut into edible wedges.",
+      "music": "During the performance, voices combined with vibrating strings in a steady beat.",
+      "neutral": "After cleaning, the folded sheets were stored in the cupboard."
+    },
+    {
+      "id": "w4",
+      "fruit": "The dessert consisted of peeled tropical produce with tender sweet flesh.",
+      "music": "The rehearsal combined tuned pitches into a repeating melodic phrase.",
+      "neutral": "The workstation contained a stapler next to a stack of envelopes."
+    }
+  ],
+  "correction": "Pilot-008 aborted after three completed contexts at its numerical check. Preserve that run. Same words, spellings, sentences, prompt wordings, gates and complete-word probability definition; only serial execution and its forward-call bound change. Some controls were seen during the aborted attempt; no outputs were used to adjust their content."
+}

@@ -1,0 +1,606 @@
+{
+  "fruit": [
+    {
+      "word": "fruit",
+      "encodings": {
+        "fruit": [
+          31454
+        ],
+        " fruit": [
+          9479
+        ]
+      },
+      "selected_ids": [
+        9479,
+        31454
+      ]
+    },
+    {
+      "word": "fruits",
+      "encodings": {
+        "fruits": [
+          104175
+        ],
+        " fruits": [
+          16391
+        ]
+      },
+      "selected_ids": [
+        16391,
+        104175
+      ]
+    },
+    {
+      "word": "orange",
+      "encodings": {
+        "orange": [
+          28975
+        ],
+        " orange": [
+          11167
+        ]
+      },
+      "selected_ids": [
+        11167,
+        28975
+      ]
+    },
+    {
+      "word": "oranges",
+      "encodings": {
+        "oranges": [
+          504,
+          7599
+        ],
+        " oranges": [
+          71816
+        ]
+      },
+      "selected_ids": [
+        71816
+      ]
+    },
+    {
+      "word": "banana",
+      "encodings": {
+        "banana": [
+          50044
+        ],
+        " banana": [
+          30077
+        ]
+      },
+      "selected_ids": [
+        30077,
+        50044
+      ]
+    },
+    {
+      "word": "bananas",
+      "encodings": {
+        "bananas": [
+          6983,
+          16123
+        ],
+        " bananas": [
+          58901
+        ]
+      },
+      "selected_ids": [
+        58901
+      ]
+    },
+    {
+      "word": "lemon",
+      "encodings": {
+        "lemon": [
+          148565
+        ],
+        " lemon": [
+          21905
+        ]
+      },
+      "selected_ids": [
+        21905,
+        148565
+      ]
+    },
+    {
+      "word": "lemons",
+      "encodings": {
+        "lemons": [
+          6279,
+          1190
+        ],
+        " lemons": [
+          114611
+        ]
+      },
+      "selected_ids": [
+        114611
+      ]
+    },
+    {
+      "word": "grape",
+      "encodings": {
+        "grape": [
+          22045,
+          635
+        ],
+        " grape": [
+          38824
+        ]
+      },
+      "selected_ids": [
+        38824
+      ]
+    },
+    {
+      "word": "grapes",
+      "encodings": {
+        "grapes": [
+          88114
+        ],
+        " grapes": [
+          37532
+        ]
+      },
+      "selected_ids": [
+        37532,
+        88114
+      ]
+    },
+    {
+      "word": "berry",
+      "encodings": {
+        "berry": [
+          10490
+        ],
+        " berry": [
+          68363
+        ]
+      },
+      "selected_ids": [
+        10490,
+        68363
+      ]
+    },
+    {
+      "word": "berries",
+      "encodings": {
+        "berries": [
+          24361
+        ],
+        " berries": [
+          35688
+        ]
+      },
+      "selected_ids": [
+        24361,
+        35688
+      ]
+    },
+    {
+      "word": "cherry",
+      "encodings": {
+        "cherry": [
+          131784
+        ],
+        " cherry": [
+          30153
+        ]
+      },
+      "selected_ids": [
+        30153,
+        131784
+      ]
+    },
+    {
+      "word": "cherries",
+      "encodings": {
+        "cherries": [
+          5607,
+          2302
+        ],
+        " cherries": [
+          86892
+        ]
+      },
+      "selected_ids": [
+        86892
+      ]
+    },
+    {
+      "word": "mango",
+      "encodings": {
+        "mango": [
+          181530
+        ],
+        " mango": [
+          51894
+        ]
+      },
+      "selected_ids": [
+        51894,
+        181530
+      ]
+    },
+    {
+      "word": "melon",
+      "encodings": {
+        "melon": [
+          34249
+        ],
+        " melon": [
+          74287
+        ]
+      },
+      "selected_ids": [
+        34249,
+        74287
+      ]
+    },
+    {
+      "word": "citrus",
+      "encodings": {
+        "citrus": [
+          20316,
+          17415
+        ],
+        " citrus": [
+          47434
+        ]
+      },
+      "selected_ids": [
+        47434
+      ]
+    },
+    {
+      "word": "coconut",
+      "encodings": {
+        "coconut": [
+          229603
+        ],
+        " coconut": [
+          31255
+        ]
+      },
+      "selected_ids": [
+        31255,
+        229603
+      ]
+    },
+    {
+      "word": "pineapple",
+      "encodings": {
+        "pineapple": [
+          110691
+        ],
+        " pineapple": [
+          49884
+        ]
+      },
+      "selected_ids": [
+        49884,
+        110691
+      ]
+    },
+    {
+      "word": "strawberry",
+      "encodings": {
+        "strawberry": [
+          115137
+        ],
+        " strawberry": [
+          35324
+        ]
+      },
+      "selected_ids": [
+        35324,
+        115137
+      ]
+    }
+  ],
+  "music": [
+    {
+      "word": "music",
+      "encodings": {
+        "music": [
+          26873
+        ],
+        " music": [
+          4252
+        ]
+      },
+      "selected_ids": [
+        4252,
+        26873
+      ]
+    },
+    {
+      "word": "musical",
+      "encodings": {
+        "musical": [
+          184546
+        ],
+        " musical": [
+          13906
+        ]
+      },
+      "selected_ids": [
+        13906,
+        184546
+      ]
+    },
+    {
+      "word": "instrument",
+      "encodings": {
+        "instrument": [
+          58644
+        ],
+        " instrument": [
+          10015
+        ]
+      },
+      "selected_ids": [
+        10015,
+        58644
+      ]
+    },
+    {
+      "word": "instruments",
+      "encodings": {
+        "instruments": [
+          159358
+        ],
+        " instruments": [
+          17747
+        ]
+      },
+      "selected_ids": [
+        17747,
+        159358
+      ]
+    },
+    {
+      "word": "song",
+      "encodings": {
+        "song": [
+          24013
+        ],
+        " song": [
+          5410
+        ]
+      },
+      "selected_ids": [
+        5410,
+        24013
+      ]
+    },
+    {
+      "word": "songs",
+      "encodings": {
+        "songs": [
+          78382
+        ],
+        " songs": [
+          12384
+        ]
+      },
+      "selected_ids": [
+        12384,
+        78382
+      ]
+    },
+    {
+      "word": "melody",
+      "encodings": {
+        "melody": [
+          230898
+        ],
+        " melody": [
+          59155
+        ]
+      },
+      "selected_ids": [
+        59155,
+        230898
+      ]
+    },
+    {
+      "word": "rhythm",
+      "encodings": {
+        "rhythm": [
+          236750,
+          89662
+        ],
+        " rhythm": [
+          34824
+        ]
+      },
+      "selected_ids": [
+        34824
+      ]
+    },
+    {
+      "word": "harmony",
+      "encodings": {
+        "harmony": [
+          217596
+        ],
+        " harmony": [
+          31975
+        ]
+      },
+      "selected_ids": [
+        31975,
+        217596
+      ]
+    },
+    {
+      "word": "concert",
+      "encodings": {
+        "concert": [
+          100425
+        ],
+        " concert": [
+          14603
+        ]
+      },
+      "selected_ids": [
+        14603,
+        100425
+      ]
+    },
+    {
+      "word": "orchestra",
+      "encodings": {
+        "orchestra": [
+          137073,
+          10815
+        ],
+        " orchestra": [
+          58222
+        ]
+      },
+      "selected_ids": [
+        58222
+      ]
+    },
+    {
+      "word": "band",
+      "encodings": {
+        "band": [
+          5163
+        ],
+        " band": [
+          4918
+        ]
+      },
+      "selected_ids": [
+        4918,
+        5163
+      ]
+    },
+    {
+      "word": "guitar",
+      "encodings": {
+        "guitar": [
+          70160
+        ],
+        " guitar": [
+          15583
+        ]
+      },
+      "selected_ids": [
+        15583,
+        70160
+      ]
+    },
+    {
+      "word": "drum",
+      "encodings": {
+        "drum": [
+          105587
+        ],
+        " drum": [
+          22023
+        ]
+      },
+      "selected_ids": [
+        22023,
+        105587
+      ]
+    },
+    {
+      "word": "cello",
+      "encodings": {
+        "cello": [
+          83504
+        ],
+        " cello": [
+          80447
+        ]
+      },
+      "selected_ids": [
+        80447,
+        83504
+      ]
+    },
+    {
+      "word": "harp",
+      "encodings": {
+        "harp": [
+          58381
+        ],
+        " harp": [
+          66466
+        ]
+      },
+      "selected_ids": [
+        58381,
+        66466
+      ]
+    },
+    {
+      "word": "singer",
+      "encodings": {
+        "singer": [
+          190585
+        ],
+        " singer": [
+          20304
+        ]
+      },
+      "selected_ids": [
+        20304,
+        190585
+      ]
+    },
+    {
+      "word": "singing",
+      "encodings": {
+        "singing": [
+          23679,
+          522
+        ],
+        " singing": [
+          22626
+        ]
+      },
+      "selected_ids": [
+        22626
+      ]
+    },
+    {
+      "word": "tune",
+      "encodings": {
+        "tune": [
+          110964
+        ],
+        " tune": [
+          27224
+        ]
+      },
+      "selected_ids": [
+        27224,
+        110964
+      ]
+    },
+    {
+      "word": "notes",
+      "encodings": {
+        "notes": [
+          23184
+        ],
+        " notes": [
+          8687
+        ]
+      },
+      "selected_ids": [
+        8687,
+        23184
+      ]
+    }
+  ]
+}
